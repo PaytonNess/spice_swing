@@ -4,21 +4,27 @@ using UnityEngine;
 
 public class custumers : MonoBehaviour
 {
+    public SpriteRenderer spriteRenderer0;
+    public SpriteRenderer spriteRenderer1;
+    public SpriteRenderer spriteRenderer2;
+    public SpriteRenderer spriteRenderer3;
+    public Sprite image;
     public class custmor
     {
+        
         public int order = -1;
         public int waitTime = 90;
         public int mood = 3;
-
+        public int position;
         public custmor(int wait, int ord)
         {
             order = ord;
             waitTime = wait;
+            
         }
-
-
+           
     }
-
+    public custmor[] cust;
     //this is in seconds
 
     private int delay = 5;
@@ -27,27 +33,66 @@ public class custumers : MonoBehaviour
     private bool loop = true;
     private int temp = 0;
     private bool wait = true;
-    private custmor[] cust;
+    private custmor[] pos = new custmor[4];
+    private int j = 0;
+    private int another = 0;
     // Start is called before the first frame update
     void Start()
     {
         cust = new custmor[maxCustomers];
+        spriteRenderer3.enabled = false;
+        spriteRenderer2.enabled = false;
+        spriteRenderer1.enabled = false;
+        spriteRenderer0.enabled = false;
     }
 
     IEnumerator Example()
     {
-
-
         Debug.Log("working");
         yield return new WaitForSeconds(delay);
         if (temp < maxCustomers)
         {
-            int food = randOrder();
-            cust[temp] = new custmor(10, food);
-            StartCoroutine(waitTimer(cust[temp]));
-            temp++;
+            //spriteRenderer.enabled = true;
 
-            Debug.Log(temp);
+            int food = randOrder();
+            custmor person = new custmor(10, food);
+            cust[temp] = person;
+            //StartCoroutine(waitTimer(cust[temp]));
+            temp++;
+            
+            if (pos[j] == null)
+            {
+                //Debug.Log("j =");
+                //Debug.Log(j);
+                pos[j] = cust[temp];
+                //cust[temp].position = j;
+                switch (j)
+                {
+                    case 3:
+                        spriteRenderer3.enabled = true;
+                        break;
+                    case 2:
+                        spriteRenderer2.enabled = true;
+                        break;
+                    case 1:
+                        spriteRenderer1.enabled = true;
+                        break;
+                    case 0:
+                        spriteRenderer0.enabled = true;
+                        break;
+                    default:
+                        Debug.Log("error");
+                        break;
+                }
+                //Debug.Log("GOD WORK");
+                j += 1;
+                if (j >= 4)
+                {
+                    //Debug.Log("j = 0");
+                    j = 0;
+                }
+            }
+            //Debug.Log(temp);
         }
         loop = true;
 
@@ -57,7 +102,7 @@ public class custumers : MonoBehaviour
     {
         if (loop)
         {
-            Debug.Log("start");
+            //Debug.Log("start");
             StartCoroutine(Example());
             loop = false;
         }
@@ -79,12 +124,14 @@ public class custumers : MonoBehaviour
             t++;
             if (t > (cus.waitTime / 2) && notmad)
             {
+
                 cus.mood = 2;
                 Debug.Log("upset");
                 notmad = false;
             }
             if (t > (cus.waitTime / 3) && !notmad)
             {
+                yield return new WaitForSeconds(cus.waitTime / 3);
                 cus.mood = 1;
                 Debug.Log("angry");
             }
@@ -93,6 +140,31 @@ public class custumers : MonoBehaviour
                 wait = false;
             }
         }
-
     }
+    public void leave()
+    {
+        Debug.Log("called");
+
+        if (spriteRenderer0.enabled == true && another == 0)
+        {
+            spriteRenderer0.enabled = false;
+            another += 1;
+        }
+        else if (spriteRenderer1.enabled == true && another == 1)
+        {
+            spriteRenderer1.enabled = false;
+            another += 1;
+        }
+        else if (spriteRenderer2.enabled == true && another == 2)
+        {
+            spriteRenderer2.enabled = false;
+            another += 1;
+        }
+        else if (spriteRenderer3.enabled == true && another == 3)
+        {
+            spriteRenderer3.enabled = false;
+            another = 0;
+        }
+    }
+           
 }

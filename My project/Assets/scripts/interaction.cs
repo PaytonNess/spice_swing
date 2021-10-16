@@ -44,11 +44,14 @@ public class interaction : MonoBehaviour
         }
         if (other.transform.tag == "serve")
         {
+            
             // check if player has cook food
             if (hasCookFood)
             {
                 hasCookFood = false;
                 Debug.Log("served food");
+                custumers orders = other.gameObject.GetComponent<custumers>();
+                orders.leave();
             }
         }
     }

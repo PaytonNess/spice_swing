@@ -16,7 +16,7 @@ public class songs : MonoBehaviour
         IEnumerator Example()
         {
             Debug.Log("working");
-            yield return new WaitForSeconds(40);//120
+            yield return new WaitForSeconds(120);//120
             player.clip = song2;
             player.Play(0);
             Debug.Log("new song");

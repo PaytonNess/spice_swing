@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 85825064f1950424495e6087ebc420c1
+guid: fb9181f10bde70b4283cc434ec5f1999
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2372977753531975946
-    second: side_walk_flip_0
+      213: 66462515512160288
+    second: custumer_0
   - first:
-      213: 1721739119076044016
-    second: side_walk_flip_1
+      213: -2390144099748103860
+    second: custumer_1
   - first:
-      213: 3174632816563878451
-    second: side_walk_flip_2
+      213: -671472295666018060
+    second: custumer_2
   - first:
-      213: 8234394649731591406
-    second: side_walk_flip_3
+      213: 3084255867866838748
+    second: custumer_3
   - first:
-      213: -2533498390151217516
-    second: side_walk_flip_4
+      213: 5459892022775929195
+    second: custumer_4
   - first:
-      213: -4086601008424563314
-    second: side_walk_flip_5
+      213: -3160079321280749706
+    second: custumer_5
   - first:
-      213: -4659507560900493681
-    second: side_walk_flip_6
+      213: -3667518100761657141
+    second: custumer_6
+  - first:
+      213: -600083114861447456
+    second: custumer_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: side_walk_flip_0
+      name: custumer_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 63
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,20 +129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a098d2bb1b28ee020800000000000000
-      internalID: 2372977753531975946
+      spriteID: 0203bf34e4f1ce000800000000000000
+      internalID: 66462515512160288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_1
+      name: custumer_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 63
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fceb6c4b98d4e710800000000000000
-      internalID: 1721739119076044016
+      spriteID: c49b484da9084ded0800000000000000
+      internalID: -2390144099748103860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_2
+      name: custumer_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 63
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a769b0abf8e0c20800000000000000
-      internalID: 3174632816563878451
+      spriteID: 4f89f4431837ea6f0800000000000000
+      internalID: -671472295666018060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_3
+      name: custumer_3
       rect:
         serializedVersion: 2
         x: 96
-        y: 63
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eece0a56e42764270800000000000000
-      internalID: 8234394649731591406
+      spriteID: cd6fd98ee5a7dca20800000000000000
+      internalID: 3084255867866838748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_4
+      name: custumer_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1
+        x: 128
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,20 +213,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49e330023a437dcd0800000000000000
-      internalID: -2533498390151217516
+      spriteID: b695c81fdde65cb40800000000000000
+      internalID: 5459892022775929195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_5
+      name: custumer_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 1
+        x: 160
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8dc91ad80a7947c0800000000000000
-      internalID: -4086601008424563314
+      spriteID: 67fd001a9942524d0800000000000000
+      internalID: -3160079321280749706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_6
+      name: custumer_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 1
+        x: 192
+        y: 0
         width: 32
-        height: 50
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,8 +255,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8e774c7f8a165fb0800000000000000
-      internalID: -4659507560900493681
+      spriteID: bc049ccf7bb5a1dc0800000000000000
+      internalID: -3667518100761657141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: custumer_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e639fe16931ca7f0800000000000000
+      internalID: -600083114861447456
       vertices: []
       indices: 
       edges: []
