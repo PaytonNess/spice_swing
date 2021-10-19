@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - cooking
+  - ingredents
+  - serve
+  - Input Area
+  - UpArrow
+  - DownArrow
+  - LeftArrow
+  - RightArrow
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: MiniGame BG
+    uniqueID: 1720293985
+    locked: 0
+  - name: MiniGame Overlay
+    uniqueID: 2997648951
+    locked: 0
+  - name: Arrows
+    uniqueID: 1790225289
+    locked: 0
