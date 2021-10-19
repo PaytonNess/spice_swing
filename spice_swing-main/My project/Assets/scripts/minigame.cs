@@ -40,7 +40,19 @@ public class minigame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
+        Up_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        Down_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        Left_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        Right_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        minigameBG.GetComponent<SpriteRenderer>().enabled = false;
+        leftPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        upPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        downPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        rightPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        outOfBounds.GetComponent<SpriteRenderer>().enabled = false;
+        qualityMeter.GetComponent<SpriteRenderer>().enabled = false;
+        
         //Set number of notes in mini game.
         notesList = randomizeNotes(numOfNotes[dayNum - 1]);
 
@@ -138,7 +150,7 @@ public class minigame : MonoBehaviour
 
     }
 
-    void ActivateGame()
+    public void ActivateGame()
     {
         if (minigameBG.activeSelf)
         {
@@ -153,6 +165,17 @@ public class minigame : MonoBehaviour
 
     IEnumerator Gamestart()
     {
+        Up_Arrow.GetComponent<SpriteRenderer>().enabled = true;
+        Down_Arrow.GetComponent<SpriteRenderer>().enabled = true;
+        Left_Arrow.GetComponent<SpriteRenderer>().enabled = true;
+        Right_Arrow.GetComponent<SpriteRenderer>().enabled = true;
+        minigameBG.GetComponent<SpriteRenderer>().enabled = true;
+        leftPressZone.GetComponent<SpriteRenderer>().enabled = true;
+        upPressZone.GetComponent<SpriteRenderer>().enabled = true;
+        downPressZone.GetComponent<SpriteRenderer>().enabled = true;
+        rightPressZone.GetComponent<SpriteRenderer>().enabled = true;
+        outOfBounds.GetComponent<SpriteRenderer>().enabled = true;
+        qualityMeter.GetComponent<SpriteRenderer>().enabled = true;
         Debug.Log("Made it to Gamestart");
         for (int i = 0; i < numOfNotes[dayNum - 1]; i++)
         {
@@ -163,7 +186,19 @@ public class minigame : MonoBehaviour
         }
         notesList.RemoveRange(0, numOfNotes[dayNum - 1] - 1);
         yield return new WaitForSeconds(5);
-
+       
+        Up_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        Down_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        Left_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        Right_Arrow.GetComponent<SpriteRenderer>().enabled = false;
+        minigameBG.GetComponent<SpriteRenderer>().enabled = false;
+        leftPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        upPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        downPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        rightPressZone.GetComponent<SpriteRenderer>().enabled = false;
+        outOfBounds.GetComponent<SpriteRenderer>().enabled = false;
+        qualityMeter.GetComponent<SpriteRenderer>().enabled = false;
+      
         DeactivateMiniGame();
     }
 }

@@ -9,12 +9,14 @@ public class interaction : MonoBehaviour
     private bool hasCookFood = false;
     private BoxCollider2D colid;
     private minigame mini;
+    private Animator _anim;
 
     // Start is called before the first frame update
     void Start()
     {
         colid = GetComponent<BoxCollider2D>();
         mini = GetComponent<minigame>();
+        _anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,13 +36,16 @@ public class interaction : MonoBehaviour
                 hasCookFood = true;
                 Debug.Log("cooked food");
                 hasFood = false;
-                //mini.ActivateGame()
+                _anim.SetBool("raw", hasFood);
+                _anim.SetBool("food", hasCookFood);
+                mini.ActivateGame();
             }
         }
         if (other.transform.tag == "ingredents")
         {
             Debug.Log("has food");
             hasFood = true;
+            _anim.SetBool("raw", hasFood);
         }
         if (other.transform.tag == "serve")
         {
@@ -49,6 +54,7 @@ public class interaction : MonoBehaviour
             if (hasCookFood)
             {
                 hasCookFood = false;
+                _anim.SetBool("food", hasCookFood);
                 Debug.Log("served food");
                 custumers orders = other.gameObject.GetComponent<custumers>();
                 orders.leave();
