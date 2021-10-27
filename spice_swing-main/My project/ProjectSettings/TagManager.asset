@@ -12,6 +12,9 @@ TagManager:
   - DownArrow
   - LeftArrow
   - RightArrow
+  - Meat
+  - Veggie
+  - Grain
   layers:
   - Default
   - TransparentFX
