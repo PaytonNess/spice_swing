@@ -10376,11 +10376,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850130291}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &956475235 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2789268565984557229, guid: b3a44c72fcbbc3546a86330bdaaf8beb, type: 3}
-  m_PrefabInstance: {fileID: 1665025616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &956475238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2789268565984557231, guid: b3a44c72fcbbc3546a86330bdaaf8beb, type: 3}
@@ -10917,6 +10912,7 @@ MonoBehaviour:
   spriteRenderer2: {fileID: 360359335}
   spriteRenderer3: {fileID: 133314263}
   image: {fileID: -3160079321280749706, guid: fb9181f10bde70b4283cc434ec5f1999, type: 3}
+  another: 0
 --- !u!1 &1817347387
 GameObject:
   m_ObjectHideFlags: 0
@@ -11372,7 +11368,6 @@ GameObject:
   - component: {fileID: 1974312132}
   - component: {fileID: 1974312133}
   - component: {fileID: 1974312127}
-  - component: {fileID: 1974312134}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -11458,7 +11453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1974312126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.07, y: 0.01, z: 0}
+  m_LocalPosition: {x: 1, y: 0.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 519420032}
@@ -11539,36 +11534,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e98aed7c674f5c4a99c1d798cd39e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1974312134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1974312126}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7776aedcd3b73f94a94d4b8f9866c242, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Up_Arrow: {fileID: 7658308673033706343, guid: 0a9a6376859faa34fa1af3a489d2946b, type: 3}
-  Down_Arrow: {fileID: 7427768308471268579, guid: 8181f7f346d2999468280554e3116ed4, type: 3}
-  Left_Arrow: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
-  Right_Arrow: {fileID: 480766670294908770, guid: 61ae4fc5f2ec03c40817e538d9c17a0a, type: 3}
-  minigameBG: {fileID: 956475235}
-  leftPressZone: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
-  upPressZone: {fileID: 8813425802381589313, guid: bf6eeb49894d2f444b3b0242fe7c5dfe, type: 3}
-  downPressZone: {fileID: 7359857281266400624, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
-  rightPressZone: {fileID: 1794841292128039198, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
-  outOfBounds: {fileID: 2349656333854016844, guid: 9c83f25be62ae074cbe9bd9700fe40ef, type: 3}
-  qualityMeter: {fileID: 6594658693303441551, guid: 08bba33f47452754d8f5077d29fc536d, type: 3}
-  scriptHolder: {fileID: 0}
-  theScript: {fileID: 0}
-  scriptHolder2: {fileID: 0}
-  modifyQuality: {fileID: 0}
-  quality: 0
-  qualityStart: 3
-  qualityMax: 10
+  hasMeat: 0
+  hasGrain: 0
+  hasVeggie: 0
+  hasFood: 0
+  hasCookFood: 0
+  halfCooked: 0
 --- !u!4 &2011808046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9008511006342365692, guid: 9c83f25be62ae074cbe9bd9700fe40ef, type: 3}
