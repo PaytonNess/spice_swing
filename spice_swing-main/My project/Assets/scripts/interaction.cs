@@ -35,8 +35,11 @@ public class interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (orders.pos[orders.another] != null)
-        order = orders.pos[orders.another].getOrder();
+        if (orders != null) {
+            if (orders.pos != null) {
+                order = orders.pos[orders.another].getOrder();
+            }
+    }
         /*   switch (orders.pos[orders.another].getOrder())
            {
                case 3:
