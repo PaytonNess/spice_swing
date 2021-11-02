@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: eb46cf42c2b93ff43b9f9b91767dbd37
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7134266191269912714
+    second: thermomiter_0
+  - first:
+      213: -2374299045826630671
+    second: thermomiter_1
+  - first:
+      213: 7467325340158006896
+    second: thermomiter_2
+  - first:
+      213: 7709349314886830415
+    second: thermomiter_3
+  - first:
+      213: -1359099770219408689
+    second: thermomiter_4
+  - first:
+      213: 6599266559248312237
+    second: thermomiter_5
+  - first:
+      213: -4475017430669120578
+    second: thermomiter_6
+  - first:
+      213: 3551927636719642166
+    second: thermomiter_7
+  - first:
+      213: -6695407002252086741
+    second: thermomiter_8
+  - first:
+      213: 809559415812720343
+    second: thermomiter_9
+  - first:
+      213: -2651077788415584947
+    second: thermomiter_10
+  - first:
+      213: 4139420725238194262
+    second: thermomiter_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +125,259 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: thermomiter_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f1740b2befdfc90800000000000000
+      internalID: -7134266191269912714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb64fee89bcc0fd0800000000000000
+      internalID: -2374299045826630671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076146255d441a760800000000000000
+      internalID: 7467325340158006896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f490b332b5c1dfa60800000000000000
+      internalID: 7709349314886830415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2d1c5b5f1832de0800000000000000
+      internalID: -1359099770219408689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da72c12a8fd459b50800000000000000
+      internalID: 6599266559248312237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb29414b5b85e1c0800000000000000
+      internalID: -4475017430669120578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636219edd5bfa4130800000000000000
+      internalID: 3551927636719642166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22f9142ec22513a0800000000000000
+      internalID: -6695407002252086741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6071cdff12c3b00800000000000000
+      internalID: 809559415812720343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d459f852cca753bd0800000000000000
+      internalID: -2651077788415584947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: thermomiter_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 11
+        width: 25
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65066bfc73d227930800000000000000
+      internalID: 4139420725238194262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

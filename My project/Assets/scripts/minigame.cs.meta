@@ -3,7 +3,22 @@ guid: 7776aedcd3b73f94a94d4b8f9866c242
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - MiniGameBG: {fileID: 2789268565984557229, guid: b3a44c72fcbbc3546a86330bdaaf8beb, type: 3}
+  - Out_Of_Bounds: {fileID: 2349656333854016844, guid: 9c83f25be62ae074cbe9bd9700fe40ef, type: 3}
+  - QualityMeter: {fileID: 6594658693303441551, guid: 08bba33f47452754d8f5077d29fc536d, type: 3}
+  - LeftArrowEnd: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
+  - RightArrowEnd: {fileID: 1794841292128039198, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
+  - UpArrowEnd: {fileID: 8813425802381589313, guid: bf6eeb49894d2f444b3b0242fe7c5dfe, type: 3}
+  - DownArrowEnd: {fileID: 7359857281266400624, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
+  - Left_Arrow: {fileID: 6474271757705305509, guid: 2e979446f1f423c45b666f5b46d2dc11, type: 3}
+  - Up_Arrow: {fileID: 7658308673033706343, guid: 0a9a6376859faa34fa1af3a489d2946b, type: 3}
+  - Down_Arrow: {fileID: 7427768308471268579, guid: 8181f7f346d2999468280554e3116ed4, type: 3}
+  - Right_Arrow: {fileID: 480766670294908770, guid: 61ae4fc5f2ec03c40817e538d9c17a0a, type: 3}
+  - scriptHolder: {instanceID: 0}
+  - theScript: {instanceID: 0}
+  - scriptHolder2: {instanceID: 0}
+  - modifyQuality: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

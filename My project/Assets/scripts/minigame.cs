@@ -1,130 +1,210 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class minigame : MonoBehaviour
 {
+    public GameObject MiniGameBG;
+    public GameObject Out_Of_Bounds;
+    public GameObject QualityMeter;
+    public GameObject LeftArrowEnd;
+    public GameObject RightArrowEnd;
+    public GameObject UpArrowEnd;
+    public GameObject DownArrowEnd;
+    public GameObject Left_Arrow;
     public GameObject Up_Arrow;
     public GameObject Down_Arrow;
-    public GameObject Left_Arrow;
     public GameObject Right_Arrow;
-    public GameObject minigameBG;
-    public GameObject keyPressZone;
-    public GameObject outOfBounds;
 
+    public GameObject scriptHolder;
+    public minigame modifyQuality;
 
-    public int dayNum = 1; //Holds day of week number
-    public int quality = 3; //quality starts at 3; Max value of 10
+    public int quality;
+    public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
-    public List<string> notesList;
+    private int dayNum = 2; //Holds day of week number
+
+
+    private bool failedMG = false; //Has the player failed the minigame?
+    private bool destroyedArrows = false;
 
     //Set number of notes needed per day
     private int[] numOfNotes = { 3, 5, 6, 10, 12 };
 
-    //Assortment of notes that players may need to hit for the mini-game
-    private string[] inputSelections = { "a", "w", "s", "d" };
 
     //The pace at which notes fall down
     private float[] notePace = { 2.0f, 1.75f, 1.5f, 1.25f, 1.0f };
 
 
+    private List<GameObject> notesList;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject[] arrowOptions = { Left_Arrow, Up_Arrow, Down_Arrow, Right_Arrow };
+        quality = 3;
         //Set number of notes in mini game.
-        notesList = randomizeNotes(numOfNotes[dayNum - 1]);
 
-        minigameBG.SetActive(true);
-        keyPressZone.SetActive(true);
-        outOfBounds.SetActive(true);
-
-        if (minigameBG.activeSelf)
-        {
-            Debug.Log("The minigame background is active.");
-        }
-        //Needs to setActive objects above
+        scriptHolder = GameObject.Find("character");
+        modifyQuality = scriptHolder.GetComponent<minigame>();
     }
 
     // Update is called once per frame
-
-    
     void Update()
     {
-        //If quality meter reaches 0, the dish is failed
-        if (getQuality() <= 0)
+
+        //TODO: If quality meter reaches 0, the dish is failed [Not implemented yet]
+        if (getQuality() <= 0 && destroyedArrows == false)
         {
-            //Queue fail sequence
+            GameObject[] arrowsGenerated;
+
+            destroyedArrows = true;
+            Debug.Log("MG Failed");
+            failedMG = true;
+            arrowsGenerated = GameObject.FindGameObjectsWithTag("LeftArrow");
+            DestroyArrows(arrowsGenerated);
+            arrowsGenerated = GameObject.FindGameObjectsWithTag("UpArrow");
+            DestroyArrows(arrowsGenerated);
+            arrowsGenerated = GameObject.FindGameObjectsWithTag("DownArrow");
+            DestroyArrows(arrowsGenerated);
+            arrowsGenerated = GameObject.FindGameObjectsWithTag("RightArrow");
+            DestroyArrows(arrowsGenerated);
+
+            DeactivateMiniGame();
         }
-
     }
 
-    int getQuality()
-    {
-        return quality;
-    }
 
-    List<string> randomizeNotes(int numNotes)
+    List<GameObject> randomizeNotes(int numNotes)
     {
         //List is created to hold set of randomized notes
-        List<string> listOfNotes = null;
+        List<GameObject> listOfNotes = new List<GameObject>();
 
         //Loop continues until listOfNotes has appropriated number of notes for the mini-game
-        while (listOfNotes.Capacity < numOfNotes[dayNum - 1])
+        for (int i = 0; i < numNotes; i++)
         {
 
-            listOfNotes.Add(inputSelections[(int)(Random.Range(0.0f, inputSelections.Length))]);
+            int noteChoice = (int) Random.Range(0.0f, 4.0f);
+            if (noteChoice == 0)
+            {
+                listOfNotes.Add(Left_Arrow);
+                Debug.Log("List added left arrow");
+            }
+            else if (noteChoice == 1)
+            {
+                listOfNotes.Add(Up_Arrow);
+                Debug.Log("List added up arrow");
+            }
+            else if (noteChoice == 2)
+            {
+                listOfNotes.Add(Down_Arrow);
+                Debug.Log("List added down arrow");
+            }
+            else if (noteChoice == 3)
+            {
+                listOfNotes.Add(Right_Arrow);
+                Debug.Log("List added right arrow");
+            }
         }
 
         return listOfNotes;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        minigameBG.SetActive(true);
-        keyPressZone.SetActive(true);
-        outOfBounds.SetActive(true);
-    }
-
     void OnCollisionEnter2D(Collision2D other)
     {
+        //Transfer to a different script for the Out-of-Bounds to hold.
         if (other.gameObject.CompareTag("UpArrow") || other.gameObject.CompareTag("DownArrow") || other.gameObject.CompareTag("LeftArrow") || other.gameObject.CompareTag("RightArrow"))
         {
-            DestroyArrows(other.gameObject);
+            Destroy(other.gameObject);
+
+            modifyQuality.UpdateQuality(-1);
         }
     }
 
-    void DestroyArrows(GameObject arrow)
+    //Destroys remaining arrows on screen upon a failed attempt
+    public void DestroyArrows(GameObject[] arrowsArray)
     {
-        Destroy(arrow);
+        for (int i = 0; i < arrowsArray.Length; i++)
+        {
+            Destroy(arrowsArray[i]);
+        }
+    }
+
+    //When the food is served reset the quality to startingQuality;
+    public void ResetQuality()
+    {
+        quality = qualityStart;
+    }
+
+    public int getQuality()
+    {
+        return quality;
+    }
+
+    public void UpdateQuality(int performance)
+    {
+        quality += performance;
+
+        if (quality > qualityMax)
+        {
+            quality = qualityMax;
+        }
+
+    }
+
+    public void ActivateGame()
+    {
+        MiniGameBG.SetActive(true);
+        Out_Of_Bounds.SetActive(true);
+        QualityMeter.SetActive(true);
+        LeftArrowEnd.SetActive(true);
+        UpArrowEnd.SetActive(true);
+        DownArrowEnd.SetActive(true);
+        RightArrowEnd.SetActive(true);
+
+        StartCoroutine(Gamestart());
+
+    }
+
+    void DeactivateMiniGame()
+    {
+        MiniGameBG.SetActive(false);
+        Out_Of_Bounds.SetActive(false);
+        QualityMeter.SetActive(false);
+        LeftArrowEnd.SetActive(false);
+        UpArrowEnd.SetActive(false);
+        DownArrowEnd.SetActive(false);
+        RightArrowEnd.SetActive(false);
+    }
+
+    //Return true if the user failed the minigame, false if the minigame was passed.
+    public bool mgFailed()
+    {
+        return failedMG;
+    }
+
+    public void ResetMG()
+    {
+        failedMG = false;
+    }
+
+    //TODO: Add check to see (if success, then part of recipe is complete.)
+    IEnumerator Gamestart()
+    {
+        //Randomizes game notes that will drop down
+        notesList = randomizeNotes(numOfNotes[dayNum - 1]);
+
+        Debug.Log("Made it to Gamestart");
+        for (int i = 0; i < numOfNotes[dayNum - 1]; i++)
+        {
+            yield return new WaitForSeconds(notePace[dayNum - 1]);
+            GameObject gameObject = Instantiate(notesList[i]) as GameObject;
+        }
+        notesList.Clear();
+
+        yield return new WaitForSeconds(5);
+
+        DeactivateMiniGame();
     }
 
 
-    /*
-    void UpdateQuality("Cooking performance")
-    {
-        if ("Cooking performance is good")
-        {
-            quality++;
-        }
-        else if ("Cooking performance is bad")
-        {
-            quality--;
-        }
-        
-    }
-    */
-
-    /*void ActivateGame(GameObject[] arrowOptions)
-    {
-        minigameBG.SetActive(true);
-        keyPressZone.SetActive(true);
-        outOfBounds.SetActive(true);
-        
-        for(int i = 0; i < numOfNotes[dayNum-1]; i++)
-        {
-
-            Instantiate(arrowOptions[(int)Random.Range(0.0f, arrowOptions.length)]) as GameObject;
-        }
-    }*/
 }

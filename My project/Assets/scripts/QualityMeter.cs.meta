@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 2221eccee1c2a0940bd338d3df5f168d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - scriptHolder: {instanceID: 0}
+  - mgScript: {instanceID: 0}
+  - qualityChanger: {instanceID: 0}
+  - quality0: {fileID: -7134266191269912714, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality1: {fileID: -2374299045826630671, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality2: {fileID: 7467325340158006896, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality3: {fileID: 7709349314886830415, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality4: {fileID: -1359099770219408689, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality5: {fileID: 6599266559248312237, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality6: {fileID: -4475017430669120578, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality7: {fileID: 3551927636719642166, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality8: {fileID: -6695407002252086741, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality9: {fileID: 809559415812720343, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  - quality10: {fileID: -2651077788415584947, guid: eb46cf42c2b93ff43b9f9b91767dbd37, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

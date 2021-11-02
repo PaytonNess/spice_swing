@@ -30,11 +30,22 @@ public class interaction : MonoBehaviour
             if (hasFood)
             {
                 //call minigame
+                mini.ActivateGame();
                 //check minigame results
-                hasCookFood = true;
-                Debug.Log("cooked food");
+                if(mini.mgFailed())
+                {
+                    //The food did not get cooked.
+                    hasCookFood = false;
+                    mini.ResetMG();
+
+                }
+                else
+                {
+                    //The food was successfully cooked
+                    hasCookFood = true;
+                }
                 hasFood = false;
-                //mini.ActivateGame()
+                mini.ResetQuality();
             }
         }
         if (other.transform.tag == "ingredents")
