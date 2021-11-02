@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 13aee4ee48a2b8b4bbb8a68d8d611587
+guid: beeb06ebb6fca7c4cbc9f386839e296a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2372977753531975946
-    second: side_walk_flip_0
+      213: -8072707352930148859
+    second: side_walk_0
   - first:
-      213: 1721739119076044016
-    second: side_walk_flip_1
+      213: -1488339128060760114
+    second: side_walk_1
   - first:
-      213: 3174632816563878451
-    second: side_walk_flip_2
+      213: 6833351218820420055
+    second: side_walk_2
   - first:
-      213: 8234394649731591406
-    second: side_walk_flip_3
+      213: -8980854037219245679
+    second: side_walk_3
   - first:
-      213: -2533498390151217516
-    second: side_walk_flip_4
+      213: -5681706179473588618
+    second: side_walk_4
   - first:
-      213: -4086601008424563314
-    second: side_walk_flip_5
+      213: -3229213664347928596
+    second: side_walk_5
   - first:
-      213: -4659507560900493681
-    second: side_walk_flip_6
+      213: -4770602972497182875
+    second: side_walk_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -112,7 +112,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: side_walk_flip_0
+      name: side_walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -126,14 +126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a098d2bb1b28ee020800000000000000
-      internalID: 2372977753531975946
+      spriteID: 50e1aecfe6bf7ff80800000000000000
+      internalID: -8072707352930148859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_1
+      name: side_walk_1
       rect:
         serializedVersion: 2
         x: 32
@@ -147,14 +147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fceb6c4b98d4e710800000000000000
-      internalID: 1721739119076044016
+      spriteID: ecfaf96d27b585be0800000000000000
+      internalID: -1488339128060760114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_2
+      name: side_walk_2
       rect:
         serializedVersion: 2
         x: 64
@@ -168,14 +168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33a769b0abf8e0c20800000000000000
-      internalID: 3174632816563878451
+      spriteID: 7d116479ab0f4de50800000000000000
+      internalID: 6833351218820420055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_3
+      name: side_walk_3
       rect:
         serializedVersion: 2
         x: 96
@@ -189,14 +189,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eece0a56e42764270800000000000000
-      internalID: 8234394649731591406
+      spriteID: 1910ae3f5d89d5380800000000000000
+      internalID: -8980854037219245679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_4
+      name: side_walk_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 32
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67eb55e25568621b0800000000000000
+      internalID: -5681706179473588618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: side_walk_5
       rect:
         serializedVersion: 2
         x: 32
@@ -210,14 +231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49e330023a437dcd0800000000000000
-      internalID: -2533498390151217516
+      spriteID: ce744b808478f23d0800000000000000
+      internalID: -3229213664347928596
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: side_walk_flip_5
+      name: side_walk_6
       rect:
         serializedVersion: 2
         x: 64
@@ -231,29 +252,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8dc91ad80a7947c0800000000000000
-      internalID: -4086601008424563314
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: side_walk_flip_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 1
-        width: 32
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8e774c7f8a165fb0800000000000000
-      internalID: -4659507560900493681
+      spriteID: 56ff1eb4fd96bcdb0800000000000000
+      internalID: -4770602972497182875
       vertices: []
       indices: 
       edges: []

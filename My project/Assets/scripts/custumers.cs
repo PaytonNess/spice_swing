@@ -11,7 +11,7 @@ public class custumers : MonoBehaviour
     public Sprite image;
     public class custmor
     {
-        
+
         public int order = -1;
         public int waitTime = 90;
         public int mood = 3;
@@ -20,22 +20,34 @@ public class custumers : MonoBehaviour
         {
             order = ord;
             waitTime = wait;
-            
+
         }
-           
+        public int getOrder()
+        {
+            return order;
+        }
+
     }
     public custmor[] cust;
     //this is in seconds
-
+    //delay before custumer shows up
     private int delay = 5;
+    //max custumers that show up that day
     private int maxCustomers = 15;
+    //the time that has passed for that one custumer
     private int timepassed;
+    //should custumers still spawn
     private bool loop = true;
+    //temp varible 
     private int temp = 0;
+    //are they still waiting
     private bool wait = true;
-    private custmor[] pos = new custmor[4];
+    //postition of the customer
+    public custmor[] pos = new custmor[4];
+    //loop compent of spawning
     private int j = 0;
-    private int another = 0;
+    //loop for the smaller serving area
+    public int another = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,54 +60,77 @@ public class custumers : MonoBehaviour
 
     IEnumerator Example()
     {
-        Debug.Log("working");
-        yield return new WaitForSeconds(delay);
-        if (temp < maxCustomers)
+        bool spawn = true;
+        Debug.Log("this is j " + j);
+        switch (j)
         {
-            //spriteRenderer.enabled = true;
-
-            int food = randOrder();
-            custmor person = new custmor(10, food);
-            cust[temp] = person;
-            //StartCoroutine(waitTimer(cust[temp]));
-            temp++;
-            
-            if (pos[j] == null)
+            case 3:
+                spawn = spriteRenderer3.enabled;
+                //j = 0;
+                break;
+            case 2:
+                spawn = spriteRenderer2.enabled;
+                break;
+            case 1:
+                spawn = spriteRenderer1.enabled;
+                break;
+            case 0:
+                spawn = spriteRenderer0.enabled;
+                break;
+            default:
+                Debug.Log("error");
+                break;
+        }
+        //Debug.Log("working");
+        yield return new WaitForSeconds(delay);
+        if (!spawn)
+        {
+            if (temp < maxCustomers)
             {
-                //Debug.Log("j =");
-                //Debug.Log(j);
-                pos[j] = cust[temp];
-                //cust[temp].position = j;
-                switch (j)
+                //spriteRenderer.enabled = true;
+
+                int food = randOrder();
+                custmor person = new custmor(10, food);
+                cust[temp] = person;
+                //StartCoroutine(waitTimer(cust[temp]));
+                temp++;
+                Debug.Log(temp);
+                if (pos[j] == null)
                 {
-                    case 3:
-                        spriteRenderer3.enabled = true;
-                        break;
-                    case 2:
-                        spriteRenderer2.enabled = true;
-                        break;
-                    case 1:
-                        spriteRenderer1.enabled = true;
-                        break;
-                    case 0:
-                        spriteRenderer0.enabled = true;
-                        break;
-                    default:
-                        Debug.Log("error");
-                        break;
+                    //Debug.Log("j =");
+                    //Debug.Log(j);
+                    pos[j] = cust[temp];
+                    //cust[temp].position = j;
+                    switch (j)
+                    {
+                        case 3:
+                            spriteRenderer3.enabled = true;
+                            break;
+                        case 2:
+                            spriteRenderer2.enabled = true;
+                            break;
+                        case 1:
+                            spriteRenderer1.enabled = true;
+                            break;
+                        case 0:
+                            spriteRenderer0.enabled = true;
+                            break;
+                        default:
+                            Debug.Log("error");
+                            break;
+                    }
+                    //Debug.Log("GOD WORK");
+                    j += 1;
+                    if (j >= 4)
+                    {
+                        Debug.Log("j = 0");
+                        j = 0;
+                    }
                 }
-                //Debug.Log("GOD WORK");
-                j += 1;
-                if (j >= 4)
-                {
-                    //Debug.Log("j = 0");
-                    j = 0;
-                }
+                //Debug.Log(temp);
             }
-            //Debug.Log(temp);
         }
         loop = true;
-
     }
     // Update is called once per frame
     void Update()
@@ -143,7 +178,7 @@ public class custumers : MonoBehaviour
     }
     public void leave()
     {
-        Debug.Log("called");
+        //Debug.Log("called");
 
         if (spriteRenderer0.enabled == true && another == 0)
         {
@@ -166,5 +201,5 @@ public class custumers : MonoBehaviour
             another = 0;
         }
     }
-           
+
 }
