@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class interaction : MonoBehaviour
 {
-    public bool hasMeat = true;
-    public bool hasGrain = true;
-    public bool hasVeggie = true;
-    public bool hasFood = true;
+    public bool hasMeat = false;
+    public bool hasGrain = false;
+    public bool hasVeggie = false;
+    public bool hasFood = false;
     private int order;
     //needs to implement recipes
     public bool hasCookFood = false;
@@ -99,6 +99,7 @@ public class interaction : MonoBehaviour
 
         if (other.transform.tag == "cutting")
         {
+            //for debug
             mini.ActivateGame();
             switch (order)
             {

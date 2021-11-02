@@ -13,6 +13,7 @@ TagManager:
   - LeftArrow
   - RightArrow
   - Out_Of_Bounds
+  - cutting
   layers:
   - Default
   - TransparentFX

@@ -1,0 +1,1620 @@
+fileFormatVersion: 2
+guid: 9b4efe1087a0f484bbde591b049b39a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8268060402944914810
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_0
+  - first:
+      213: 2725778176741154213
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_1
+  - first:
+      213: 4723724027948123030
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_2
+  - first:
+      213: -2773694450948935415
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_3
+  - first:
+      213: 8172205498985640678
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_4
+  - first:
+      213: 371376700251803183
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_5
+  - first:
+      213: 2786813454244632349
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_6
+  - first:
+      213: -2542974849791809991
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_7
+  - first:
+      213: -3414896851143982755
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_8
+  - first:
+      213: -5393510256162048898
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_9
+  - first:
+      213: -2889011472155433497
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_10
+  - first:
+      213: 2626795348201622080
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_11
+  - first:
+      213: 4877916567819117151
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_12
+  - first:
+      213: 1206076382553633009
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_13
+  - first:
+      213: 5787445382312811750
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_14
+  - first:
+      213: -2128324361463295676
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_15
+  - first:
+      213: -48884833132555134
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_16
+  - first:
+      213: -3178647217956786072
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_17
+  - first:
+      213: 96710656132418807
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_18
+  - first:
+      213: -6176703048398801711
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_19
+  - first:
+      213: -6518434717319838193
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_20
+  - first:
+      213: -9107706341792803572
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_21
+  - first:
+      213: -4636134261927043969
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_22
+  - first:
+      213: -3581340652727373859
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_23
+  - first:
+      213: 4645971859370238678
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_24
+  - first:
+      213: -8990199285750685987
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_25
+  - first:
+      213: 1926803048256596128
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_26
+  - first:
+      213: -3514605270439566430
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_27
+  - first:
+      213: 3027022650605735656
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_28
+  - first:
+      213: 7849184771117096757
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_29
+  - first:
+      213: 6030403085490766430
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_30
+  - first:
+      213: -5945114361776815441
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_31
+  - first:
+      213: -292753917400622026
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_32
+  - first:
+      213: 3035148770678174778
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_33
+  - first:
+      213: -5943901285694234162
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_34
+  - first:
+      213: 2136648900624085000
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_35
+  - first:
+      213: 8562326171303870990
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_36
+  - first:
+      213: -8123710776457891002
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_37
+  - first:
+      213: -467779683300026889
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_38
+  - first:
+      213: 368113119179897537
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_39
+  - first:
+      213: 810096546605004087
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_40
+  - first:
+      213: -3688909681034516913
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_41
+  - first:
+      213: -4291268852312061455
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_42
+  - first:
+      213: -679718931539548885
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_43
+  - first:
+      213: 1661044785637503404
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_44
+  - first:
+      213: 5117077763785511946
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_45
+  - first:
+      213: -1580412639863536164
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_46
+  - first:
+      213: -3144587877785945803
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_47
+  - first:
+      213: 8976196948084094905
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_48
+  - first:
+      213: -1716839794893584197
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_49
+  - first:
+      213: -5074781008417473520
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_50
+  - first:
+      213: -6552559020734462606
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_51
+  - first:
+      213: 2894241343361668101
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_52
+  - first:
+      213: 8510961757868814942
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_53
+  - first:
+      213: -3681447326992939539
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_54
+  - first:
+      213: -1992572720318922342
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_55
+  - first:
+      213: -1621409619487203532
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_56
+  - first:
+      213: 8982376803550605164
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_57
+  - first:
+      213: -4573546481995559049
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_58
+  - first:
+      213: 1606937790091202264
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_59
+  - first:
+      213: 3853671122352643911
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_60
+  - first:
+      213: 3489077097317735860
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_61
+  - first:
+      213: -254203983861679571
+    second: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68acefc9ed2f14d80800000000000000
+      internalID: -8268060402944914810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad1b295fc8e3d520800000000000000
+      internalID: 2725778176741154213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69343ded9f90e8140800000000000000
+      internalID: 4723724027948123030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90177bfa79bd189d0800000000000000
+      internalID: -2773694450948935415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e278866a91896170800000000000000
+      internalID: 8172205498985640678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e8d582425672500800000000000000
+      internalID: 371376700251803183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17d78b4210cca620800000000000000
+      internalID: 2786813454244632349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936286de8d985bcd0800000000000000
+      internalID: -2542974849791809991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5186f22869db90d0800000000000000
+      internalID: -3414896851143982755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74f8018ff66625b0800000000000000
+      internalID: -5393510256162048898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5a52a6f5b28e7d0800000000000000
+      internalID: -2889011472155433497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ac43ba370447420800000000000000
+      internalID: 2626795348201622080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52e9dc2647d1b340800000000000000
+      internalID: 4877916567819117151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0f8127418dcb010800000000000000
+      internalID: 1206076382553633009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ecdab979e2215050800000000000000
+      internalID: 5787445382312811750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4419b24054ca672e0800000000000000
+      internalID: -2128324361463295676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284da36d083525ff0800000000000000
+      internalID: -48884833132555134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860f66b423d23e3d0800000000000000
+      internalID: -3178647217956786072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc84c054d5975100800000000000000
+      internalID: 96710656132418807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4fd159d41f74aa0800000000000000
+      internalID: -6176703048398801711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06c396292ed985a0800000000000000
+      internalID: -6518434717319838193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_21
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c051eda365dea9180800000000000000
+      internalID: -9107706341792803572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c12dab37429afb0800000000000000
+      internalID: -4636134261927043969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_23
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfe48ea6a58c4ec0800000000000000
+      internalID: -3581340652727373859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2693a6acec97040800000000000000
+      internalID: 4645971859370238678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde1cd8b1656c3380800000000000000
+      internalID: -8990199285750685987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_26
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8697be9216dba10800000000000000
+      internalID: 1926803048256596128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a3ebb1b02d993fc0800000000000000
+      internalID: -3514605270439566430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_28
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee8a681015220a20800000000000000
+      internalID: 3027022650605735656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_29
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f17da66f7edec60800000000000000
+      internalID: 7849184771117096757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_30
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52c813e7ab40b350800000000000000
+      internalID: 6030403085490766430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2483d8cf5be7da0800000000000000
+      internalID: -5945114361776815441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_32
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63c5bbafcddefebf0800000000000000
+      internalID: -292753917400622026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a347cbcd9b30f1a20800000000000000
+      internalID: 3035148770678174778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_34
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec12536d545038da0800000000000000
+      internalID: -5943901285694234162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8007d6bcad6e6ad10800000000000000
+      internalID: 2136648900624085000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e020993a94e73d670800000000000000
+      internalID: 8562326171303870990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643f63f0718c24f80800000000000000
+      internalID: -8123710776457891002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5d1cf3bdc1289f0800000000000000
+      internalID: -467779683300026889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caf0e97eeccb1500800000000000000
+      internalID: 368113119179897537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 735792e548a0e3b00800000000000000
+      internalID: 810096546605004087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f462075903c5eccc0800000000000000
+      internalID: -3688909681034516913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9cd3607b95274c0800000000000000
+      internalID: -4291268852312061455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_43
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b252a7aab372196f0800000000000000
+      internalID: -679718931539548885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca130f39e673d0710800000000000000
+      internalID: 1661044785637503404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_45
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a045c7e5d13830740800000000000000
+      internalID: 5117077763785511946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd58562d31f311ae0800000000000000
+      internalID: -1580412639863536164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539b1936cfd2c54d0800000000000000
+      internalID: -3144587877785945803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b77f7cf09bd19c70800000000000000
+      internalID: 8976196948084094905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_49
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb80d118d4f8c28e0800000000000000
+      internalID: -1716839794893584197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01cb0686f81c299b0800000000000000
+      internalID: -5074781008417473520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_51
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275475f9942a015a0800000000000000
+      internalID: -6552559020734462606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 504525dda296a2820800000000000000
+      internalID: 2894241343361668101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_53
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5274b230a20d1670800000000000000
+      internalID: 8510961757868814942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_54
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de54647492fd8ecc0800000000000000
+      internalID: -3681447326992939539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91c1400ba5f854e0800000000000000
+      internalID: -1992572720318922342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f501baa889f79e0800000000000000
+      internalID: -1621409619487203532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6fa756bc10d7ac70800000000000000
+      internalID: 8982376803550605164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fcae0d4bf7780c0800000000000000
+      internalID: -4573546481995559049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_59
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de898af76dfc4610800000000000000
+      internalID: 1606937790091202264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_60
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f9209d77dfa7530800000000000000
+      internalID: 3853671122352643911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd13935221bb6030800000000000000
+      internalID: 3489077097317735860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GDD_200_Spice_swing_tile_sheet_actual_003 (1)_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a7f61d2d2e87cf0800000000000000
+      internalID: -254203983861679571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
