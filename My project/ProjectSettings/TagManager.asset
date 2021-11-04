@@ -63,3 +63,6 @@ TagManager:
   - name: Arrows
     uniqueID: 1790225289
     locked: 0
+  - name: FadeOutScreen
+    uniqueID: 3706190681
+    locked: 0
