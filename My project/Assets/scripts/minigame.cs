@@ -41,6 +41,7 @@ public class minigame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        DeactivateMiniGame();
         quality = 3;
         //Set number of notes in mini game.
 

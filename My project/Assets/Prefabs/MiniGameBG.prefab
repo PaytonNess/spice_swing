@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2789268565984557229}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.08, y: 0.023, z: 0}
+  m_LocalPosition: {x: -0.1, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 0.85, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,20 +95,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7776aedcd3b73f94a94d4b8f9866c242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiniGameBG: {fileID: 0}
+  Out_Of_Bounds: {fileID: 0}
+  QualityMeter: {fileID: 0}
+  LeftArrowEnd: {fileID: 0}
+  RightArrowEnd: {fileID: 0}
+  UpArrowEnd: {fileID: 0}
+  DownArrowEnd: {fileID: 0}
+  Left_Arrow: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
   Up_Arrow: {fileID: 7658308673033706343, guid: 0a9a6376859faa34fa1af3a489d2946b, type: 3}
   Down_Arrow: {fileID: 7427768308471268579, guid: 8181f7f346d2999468280554e3116ed4, type: 3}
-  Left_Arrow: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
   Right_Arrow: {fileID: 480766670294908770, guid: 61ae4fc5f2ec03c40817e538d9c17a0a, type: 3}
-  minigameBG: {fileID: 2789268565984557229}
-  leftPressZone: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
-  upPressZone: {fileID: 8813425802381589313, guid: bf6eeb49894d2f444b3b0242fe7c5dfe, type: 3}
-  downPressZone: {fileID: 7359857281266400624, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
-  rightPressZone: {fileID: 1794841292128039198, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
-  outOfBounds: {fileID: 2349656333854016844, guid: 9c83f25be62ae074cbe9bd9700fe40ef, type: 3}
-  qualityMeter: {fileID: 6594658693303441551, guid: 08bba33f47452754d8f5077d29fc536d, type: 3}
   scriptHolder: {fileID: 0}
-  theScript: {fileID: 0}
-  scriptHolder2: {fileID: 0}
   modifyQuality: {fileID: 0}
   quality: 0
   qualityStart: 3
