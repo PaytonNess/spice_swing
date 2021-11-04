@@ -35,30 +35,18 @@ public class interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (orders.pos[orders.another] == null)
+        {
+            Debug.Log("SAFJPKOSKNDKJFKMFDKNFKFN");
+        }
         if (orders != null)
         {
-            if (orders.pos != null)
+                if (orders.spriteRenderer0.enabled==true)
             {
-                order = orders.pos[orders.another].getOrder();
+                order = orders.pos[orders.another];
             }
         }
-        /*   switch (orders.pos[orders.another].getOrder())
-           {
-               case 3:
-
-                   break;
-               case 2:
-
-                   break;
-               case 1:
-
-                   break;
-               case 0:
-                   break;
-               default:
-                   Debug.Log("error");
-                   break;
-           } */
+       
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -360,7 +348,7 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasMeat = true;
-            _anim.SetBool("raw", hasFood);
+            _anim.SetBool("raw", hasMeat);
             _anim.SetLayerWeight(regurallayer, -1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasFood);
@@ -370,7 +358,7 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasVeggie = true;
-            _anim.SetBool("raw", hasFood);
+            _anim.SetBool("raw", hasVeggie);
             _anim.SetLayerWeight(regurallayer, -1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasFood);
@@ -380,7 +368,7 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasGrain = true;
-            _anim.SetBool("raw", hasFood);
+            _anim.SetBool("raw", hasGrain);
             _anim.SetLayerWeight(regurallayer, -1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasFood);

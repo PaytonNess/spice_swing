@@ -20,7 +20,6 @@ public class custumers : MonoBehaviour
         {
             order = ord;
             waitTime = wait;
-
         }
         public int getOrder()
         {
@@ -43,7 +42,7 @@ public class custumers : MonoBehaviour
     //are they still waiting
     private bool wait = true;
     //postition of the customer
-    public custmor[] pos = new custmor[4];
+    public int[] pos = new int[4];
     //loop compent of spawning
     private int j = 0;
     //loop for the smaller serving area
@@ -61,7 +60,6 @@ public class custumers : MonoBehaviour
     IEnumerator Example()
     {
         bool spawn = true;
-        Debug.Log("this is j " + j);
         switch (j)
         {
             case 3:
@@ -81,26 +79,24 @@ public class custumers : MonoBehaviour
                 Debug.Log("error");
                 break;
         }
-        //Debug.Log("working");
+        
         yield return new WaitForSeconds(delay);
         if (!spawn)
         {
             if (temp < maxCustomers)
             {
-                //spriteRenderer.enabled = true;
+              
 
                 int food = randOrder();
                 custmor person = new custmor(10, food);
+                Debug.Log(person.getOrder());
                 cust[temp] = person;
                 //StartCoroutine(waitTimer(cust[temp]));
                 temp++;
-                Debug.Log(temp);
-                if (pos[j] == null)
-                {
-                    //Debug.Log("j =");
-                    //Debug.Log(j);
-                    pos[j] = cust[temp];
-                    //cust[temp].position = j;
+                    
+                    
+                    pos[j] = food;
+                    
                     switch (j)
                     {
                         case 3:
@@ -129,7 +125,6 @@ public class custumers : MonoBehaviour
                 }
                 //Debug.Log(temp);
             }
-        }
         loop = true;
     }
     // Update is called once per frame
