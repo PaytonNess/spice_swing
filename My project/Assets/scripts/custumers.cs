@@ -32,7 +32,7 @@ public class custumers : MonoBehaviour
     //delay before custumer shows up
     private int delay = 5;
     //max custumers that show up that day
-    private int maxCustomers = 15;
+    private int maxCustomers = 1;
     //the time that has passed for that one custumer
     private int timepassed;
     //should custumers still spawn
@@ -119,7 +119,7 @@ public class custumers : MonoBehaviour
                     j += 1;
                     if (j >= 4)
                     {
-                        Debug.Log("j = 0");
+                        //Debug.Log("j = 0");
                         j = 0;
                     }
                 }
