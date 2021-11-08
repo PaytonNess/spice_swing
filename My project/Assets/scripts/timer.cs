@@ -14,6 +14,11 @@ public class timer : MonoBehaviour
 
     public float dayLength = 360.0f;
 
+    void Start()
+    {
+        ResetDayTimer();
+    }
+
     void Update()
     {
         gameTimer += Time.deltaTime;
@@ -33,8 +38,6 @@ public class timer : MonoBehaviour
     public void endDay()
     {
         gameTimer = 360.0f;
-
-
     }
 
     public void showTime(float gameTime)
@@ -53,5 +56,10 @@ public class timer : MonoBehaviour
     //endDay()
     // }
     // }
+
+    void ResetDayTimer()
+    {
+        gameTimer = 0;
+    }
 
 }

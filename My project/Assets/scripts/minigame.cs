@@ -19,11 +19,12 @@ public class minigame : MonoBehaviour
 
     public GameObject scriptHolder;
     public minigame modifyQuality;
+    public scoring scoreHelper;
 
     public int quality;
     public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
-    private int dayNum = 2; //Holds day of week number
+    private int dayNum = 1; //Holds day of week number
 
 
     private bool failedMG = false; //Has the player failed the minigame?
@@ -47,6 +48,7 @@ public class minigame : MonoBehaviour
 
         scriptHolder = GameObject.Find("character");
         modifyQuality = scriptHolder.GetComponent<minigame>();
+        scoreHelper = scriptHolder.GetComponent<scoring>();
     }
 
     // Update is called once per frame
@@ -118,6 +120,7 @@ public class minigame : MonoBehaviour
             Destroy(other.gameObject);
 
             modifyQuality.UpdateQuality(-1);
+            scoreHelper.setMultiplier(false);
         }
     }
 
@@ -183,6 +186,7 @@ public class minigame : MonoBehaviour
         return failedMG;
     }
 
+    //Resets failedMG boolean to false (Player can retry minigame)
     public void ResetMG()
     {
         failedMG = false;

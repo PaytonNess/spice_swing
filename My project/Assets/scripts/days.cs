@@ -1,15 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class days : MonoBehaviour
 {
     public int dayNum = 1;
-    private float fadeSpeed = 5.0f;
+    private float fadeSpeed = 2.0f;
+    private int sceneNumber;
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(FadeInFromBlack());
+        sceneNumber = SceneManager.GetActiveScene().buildIndex;
     }
 
     // Update is called once per frame
@@ -19,9 +22,13 @@ public class days : MonoBehaviour
         {
             StartCoroutine(FadeToBlack());
         }
-        if (Input.GetKeyDown(KeyCode.I))
+        else if (Input.GetKeyDown(KeyCode.I))
         {
             StartCoroutine(FadeInFromBlack());
+        }
+        else if (Input.GetKeyDown(KeyCode.Y))
+        {
+            LoadNextDay();
         }
     }
 
@@ -30,7 +37,7 @@ public class days : MonoBehaviour
         dayNum++;
     }
 
-    IEnumerator FadeToBlack()
+    IEnumerator FadeInFromBlack()
     {
         while (this.GetComponent<Renderer>().material.color.a > 0)
         {
@@ -42,7 +49,7 @@ public class days : MonoBehaviour
         }
     }
 
-    IEnumerator FadeInFromBlack()
+    IEnumerator FadeToBlack()
     {
         while (this.GetComponent<Renderer>().material.color.a < 1)
         {
@@ -52,5 +59,16 @@ public class days : MonoBehaviour
             this.GetComponent<Renderer>().material.color = blackScreen;
             yield return null;
         }
+    }
+
+    public void LoadNextDay()
+    {
+        advanceDay();
+        SceneManager.LoadScene(sceneNumber + 1);
+    }
+
+    public void LoadSameDay()
+    {
+        SceneManager.LoadScene(sceneNumber);
     }
 }
