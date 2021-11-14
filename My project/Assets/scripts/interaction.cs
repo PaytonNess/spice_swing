@@ -80,6 +80,9 @@ public class interaction : MonoBehaviour
         int regurallayer = _anim.GetLayerIndex("Base Layer");
         int rawlayer = _anim.GetLayerIndex("walking with raw");
         int layerfood = _anim.GetLayerIndex("walking with food");
+        int M = _anim.GetLayerIndex("walkingM");
+        int V = _anim.GetLayerIndex("walkingV");
+
         switch (order)
         {
             case 3:
@@ -142,7 +145,7 @@ public class interaction : MonoBehaviour
                             //The food was successfully cooked
                             ischopped = true;
                         }
-                        hasVeggie = false;
+                        //hasVeggie = false;
 
 
                         //_anim.SetBool("food", hasCookFood);
@@ -172,7 +175,7 @@ public class interaction : MonoBehaviour
                             //The food was successfully cooked
                             ischopped = true;
                         }
-                        hasMeat = false;
+                        //hasMeat = false;
 
 
                         //_anim.SetBool("raw", hasMeat);
@@ -217,12 +220,12 @@ public class interaction : MonoBehaviour
                                 prep = true;
 
                         }
-                        hasMeat = false;
-                        hasVeggie = false;
-                        _anim.SetBool("raw", hasFood);
-                        _anim.SetBool("food", hasCookFood);
+                        //hasMeat = false;
+                        //hasVeggie = false;
+                        //_anim.SetBool("raw", hasFood);
+                        //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
-                        _anim.SetLayerWeight(rawlayer, wieght);
+                        //_anim.SetLayerWeight(rawlayer, wieght);
                         //_anim.SetLayerWeight(layerfood, wieght);
 
                     }
@@ -286,6 +289,7 @@ public class interaction : MonoBehaviour
                             else
                                 prep = true;
                             ischopped = true;
+                            needsV = false;
                         }
 
                        
@@ -567,7 +571,10 @@ public class interaction : MonoBehaviour
             hasGrain = false;
             _anim.SetBool("raw", hasMeat);
             _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(rawlayer, wieght);
+            _anim.SetLayerWeight(V, -1);
+            _anim.SetLayerWeight(rawlayer, -1);
+
+            _anim.SetLayerWeight(M, wieght);
             _anim.SetBool("raw", hasMeat);
 
         }
@@ -580,7 +587,11 @@ public class interaction : MonoBehaviour
 
             _anim.SetBool("raw", hasVeggie);
             _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(rawlayer, wieght);
+            _anim.SetLayerWeight(M, -1);
+            _anim.SetLayerWeight(rawlayer, -1);
+
+            _anim.SetLayerWeight(V, wieght);
+
             _anim.SetBool("raw", hasVeggie);
 
         }
@@ -593,6 +604,8 @@ public class interaction : MonoBehaviour
 
             _anim.SetBool("raw", hasGrain);
             _anim.SetLayerWeight(regurallayer, -1);
+            _anim.SetLayerWeight(V, -1);
+            _anim.SetLayerWeight(M, -1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasGrain);
 
