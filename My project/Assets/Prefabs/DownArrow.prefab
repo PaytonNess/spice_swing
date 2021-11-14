@@ -147,3 +147,4 @@ MonoBehaviour:
   canBeHit: 0
   scriptHolder: {fileID: 0}
   callMinigame: {fileID: 0}
+  scoreChanger: {fileID: 0}
