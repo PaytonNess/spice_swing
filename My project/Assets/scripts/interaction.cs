@@ -80,6 +80,9 @@ public class interaction : MonoBehaviour
         int regurallayer = _anim.GetLayerIndex("Base Layer");
         int rawlayer = _anim.GetLayerIndex("walking with raw");
         int layerfood = _anim.GetLayerIndex("walking with food");
+        int M = _anim.GetLayerIndex("walkingM");
+        int V = _anim.GetLayerIndex("walkingV");
+
         switch (order)
         {
             case 3:
@@ -125,7 +128,7 @@ public class interaction : MonoBehaviour
             switch (order)
             {
                 case 3:
-                    if (hasVeggie)
+                    if (hasVeggie && !ischopped)
                     {
                         //call minigame
                         mini.ActivateGame();
@@ -142,20 +145,20 @@ public class interaction : MonoBehaviour
                             //The food was successfully cooked
                             ischopped = true;
                         }
-                        hasVeggie = false;
+                        //hasVeggie = false;
 
 
                         //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
-                        _anim.SetBool("raw", hasVeggie);
-                        _anim.SetLayerWeight(rawlayer, wieght);
-                        _anim.SetLayerWeight(layerfood,0);
+                        //_anim.SetBool("raw", hasVeggie);
+                        //_anim.SetLayerWeight(rawlayer, wieght);
+                        //_anim.SetLayerWeight(layerfood,0);
 
                     }
                     break;
                 case 2:
                     //gumbo
-                    if (hasMeat)
+                    if (hasMeat && !ischopped)
                     {
                         //call minigame
                         mini.ActivateGame();
@@ -172,13 +175,13 @@ public class interaction : MonoBehaviour
                             //The food was successfully cooked
                             ischopped = true;
                         }
-                        hasMeat = false;
+                        //hasMeat = false;
 
 
-                        _anim.SetBool("raw", hasMeat);
+                        //_anim.SetBool("raw", hasMeat);
                         //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
-                        _anim.SetLayerWeight(rawlayer, wieght);
+                        //_anim.SetLayerWeight(rawlayer, wieght);
                         //_anim.SetLayerWeight(layerfood, wieght);
                     }
                     break;
@@ -217,12 +220,12 @@ public class interaction : MonoBehaviour
                                 prep = true;
 
                         }
-                        hasMeat = false;
-                        hasVeggie = false;
-                        _anim.SetBool("raw", hasFood);
-                        _anim.SetBool("food", hasCookFood);
+                        //hasMeat = false;
+                        //hasVeggie = false;
+                        //_anim.SetBool("raw", hasFood);
+                        //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
-                        _anim.SetLayerWeight(rawlayer, wieght);
+                        //_anim.SetLayerWeight(rawlayer, wieght);
                         //_anim.SetLayerWeight(layerfood, wieght);
 
                     }
@@ -244,11 +247,17 @@ public class interaction : MonoBehaviour
                         else
                         {
                             //The food was successfully cooked
+                            if (prep)
+                            {
+                                hasCookFood = true;
+                            }
+                            else
+                                prep = true;
                             ischopped = true;
                         }
                         //hasGrain = false;
-                        _anim.SetBool("raw", hasMeat);
-                        _anim.SetBool("food", hasCookFood);
+                        //_anim.SetBool("raw", hasMeat);
+                        //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
@@ -257,7 +266,7 @@ public class interaction : MonoBehaviour
                         }
 
                     }
-                    if (hasVeggie)
+                    if (hasVeggie && !ischopped)
                     {
                         //ischopped = true;
                         //call minigame
@@ -280,11 +289,12 @@ public class interaction : MonoBehaviour
                             else
                                 prep = true;
                             ischopped = true;
+                            needsV = false;
                         }
 
                        
-                        _anim.SetBool("raw", hasMeat);
-                        _anim.SetBool("food", hasCookFood);
+                        //_anim.SetBool("raw", hasMeat);
+                        //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
@@ -459,7 +469,7 @@ public class interaction : MonoBehaviour
                     break;
                 case 1:
                     //clam chowder
-                    if ((hasMeat && ischopped && prep) || (hasVeggie && ischopped && prep))
+                    if ((hasMeat && (ischopped || prep)) || (hasVeggie && (ischopped || prep)))
                     {
                         //call minigame
                         mini.ActivateGame();
@@ -486,8 +496,8 @@ public class interaction : MonoBehaviour
                         }
 
 
-                        _anim.SetBool("raw", hasMeat);
-                        _anim.SetBool("food", hasCookFood);
+                        //_anim.SetBool("raw", hasMeat);
+                        //_anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
@@ -513,7 +523,7 @@ public class interaction : MonoBehaviour
                         else
                         {
                             //The food was successfully cooked
-                            hasCookFood = true;
+                            //hasCookFood = true;
                             if (halfCooked)
                             {
                                 hasCookFood = true;
@@ -557,9 +567,14 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasMeat = true;
+            hasVeggie = false;
+            hasGrain = false;
             _anim.SetBool("raw", hasMeat);
             _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(rawlayer, wieght);
+            _anim.SetLayerWeight(V, -1);
+            _anim.SetLayerWeight(rawlayer, -1);
+
+            _anim.SetLayerWeight(M, wieght);
             _anim.SetBool("raw", hasMeat);
 
         }
@@ -567,9 +582,16 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasVeggie = true;
+            hasMeat = false;
+            hasGrain = false;
+
             _anim.SetBool("raw", hasVeggie);
             _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(rawlayer, wieght);
+            _anim.SetLayerWeight(M, -1);
+            _anim.SetLayerWeight(rawlayer, -1);
+
+            _anim.SetLayerWeight(V, wieght);
+
             _anim.SetBool("raw", hasVeggie);
 
         }
@@ -577,8 +599,13 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasGrain = true;
+            hasVeggie = false;
+            hasMeat = false;
+
             _anim.SetBool("raw", hasGrain);
             _anim.SetLayerWeight(regurallayer, -1);
+            _anim.SetLayerWeight(V, -1);
+            _anim.SetLayerWeight(M, -1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasGrain);
 
@@ -590,6 +617,8 @@ public class interaction : MonoBehaviour
             if (hasCookFood)
             {
                 mini.ResetMG();
+                mini.ResetQuality();
+
                 hasCookFood = false;
                 _anim.SetBool("food", hasCookFood);
                 Debug.Log("served food");
