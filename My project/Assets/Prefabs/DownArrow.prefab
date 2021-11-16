@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -3524844813335079788}
   - component: {fileID: -4841190776274134211}
   - component: {fileID: -4034054587889880961}
+  - component: {fileID: -4172439039196197236}
   m_Layer: 0
   m_Name: DownArrow
   m_TagString: DownArrow
@@ -100,7 +101,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.02
+  m_GravityScale: 0.2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -146,5 +147,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeHit: 0
   scriptHolder: {fileID: 0}
+  uiScript: {fileID: 0}
   callMinigame: {fileID: 0}
   scoreChanger: {fileID: 0}
+--- !u!114 &-4172439039196197236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427768308471268579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 444f019ddac41da4cad59e2de57b3c81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: -3524844813335079788}

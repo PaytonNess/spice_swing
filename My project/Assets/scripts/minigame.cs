@@ -21,7 +21,7 @@ public class minigame : MonoBehaviour
     public GameObject uiScript;
     public minigame modifyQuality;
     public scoring scoreHelper;
-
+    public movement move;
     public int quality;
     public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
@@ -43,6 +43,8 @@ public class minigame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        move = GetComponent<movement>();
+
         DeactivateMiniGame();
         quality = 3;
         //Set number of notes in mini game.
@@ -63,7 +65,7 @@ public class minigame : MonoBehaviour
             GameObject[] arrowsGenerated;
 
             destroyedArrows = true;
-            Debug.Log("MG Failed");
+            //Debug.Log("MG Failed");
             failedMG = true;
             arrowsGenerated = GameObject.FindGameObjectsWithTag("LeftArrow");
             DestroyArrows(arrowsGenerated);
@@ -92,22 +94,22 @@ public class minigame : MonoBehaviour
             if (noteChoice == 0)
             {
                 listOfNotes.Add(Left_Arrow);
-                Debug.Log("List added left arrow");
+                //Debug.Log("List added left arrow");
             }
             else if (noteChoice == 1)
             {
                 listOfNotes.Add(Up_Arrow);
-                Debug.Log("List added up arrow");
+                //Debug.Log("List added up arrow");
             }
             else if (noteChoice == 2)
             {
                 listOfNotes.Add(Down_Arrow);
-                Debug.Log("List added down arrow");
+                //Debug.Log("List added down arrow");
             }
             else if (noteChoice == 3)
             {
                 listOfNotes.Add(Right_Arrow);
-                Debug.Log("List added right arrow");
+                //Debug.Log("List added right arrow");
             }
         }
 
@@ -159,6 +161,7 @@ public class minigame : MonoBehaviour
 
     public void ActivateGame()
     {
+        move.enabled = false;
         MiniGameBG.SetActive(true);
         Out_Of_Bounds.SetActive(true);
         QualityMeter.SetActive(true);
@@ -180,6 +183,7 @@ public class minigame : MonoBehaviour
         UpArrowEnd.SetActive(false);
         DownArrowEnd.SetActive(false);
         RightArrowEnd.SetActive(false);
+        move.enabled = true;
     }
 
     //Return true if the user failed the minigame, false if the minigame was passed.
@@ -200,7 +204,7 @@ public class minigame : MonoBehaviour
         //Randomizes game notes that will drop down
         notesList = randomizeNotes(numOfNotes[dayNum - 1]);
 
-        Debug.Log("Made it to Gamestart");
+        //Debug.Log("Made it to Gamestart");
         for (int i = 0; i < numOfNotes[dayNum - 1]; i++)
         {
             yield return new WaitForSeconds(notePace[dayNum - 1]);
