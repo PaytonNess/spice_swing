@@ -8,6 +8,7 @@ public class ArrowControls : MonoBehaviour
     public bool canBeHit;
 
     public GameObject scriptHolder;
+    public GameObject uiScript;
     public minigame callMinigame;
     public scoring scoreChanger;
     // Update is called once per frame
@@ -18,7 +19,8 @@ public class ArrowControls : MonoBehaviour
 
         scriptHolder = GameObject.Find("character");
         callMinigame = scriptHolder.GetComponent<minigame>();
-        scoreChanger = scriptHolder.GetComponent<scoring>();
+        uiScript = GameObject.Find("UI Holder");
+        scoreChanger = uiScript.GetComponent<scoring>();
     }
 
     void Update()
@@ -29,6 +31,7 @@ public class ArrowControls : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
+
                 scoreChanger.setScore(100);
                 scoreChanger.setMultiplier(true);
             }
@@ -36,6 +39,7 @@ public class ArrowControls : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
+
                 scoreChanger.setScore(100);
                 scoreChanger.setMultiplier(true);
             }
@@ -43,6 +47,7 @@ public class ArrowControls : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
+
                 scoreChanger.setScore(100);
                 scoreChanger.setMultiplier(true);
             }
@@ -50,6 +55,7 @@ public class ArrowControls : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
+
                 scoreChanger.setScore(100);
                 scoreChanger.setMultiplier(true);
             }

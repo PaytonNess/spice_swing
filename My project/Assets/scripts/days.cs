@@ -5,19 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class days : MonoBehaviour
 {
+    public GameObject scriptHolder;
+    public timer timeAccessor;
+
     public int dayNum = 1;
-    private float fadeSpeed = 2.0f;
+    private float fadeSpeed = 5.0f;
     private int sceneNumber;
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(FadeInFromBlack());
         sceneNumber = SceneManager.GetActiveScene().buildIndex;
+        scriptHolder = GameObject.Find("UI Holder"); //TimeHolder is an empty game object. It should be replaced by UI component in the future.
+        timeAccessor = scriptHolder.GetComponent<timer>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(timeAccessor.dayDone)
+        {
+            //Insert fade to black code
+            StartCoroutine(FadeToBlack());
+            LoadNextDay();
+        }
+
         if (Input.GetKeyDown(KeyCode.O))
         {
             StartCoroutine(FadeToBlack());
@@ -30,11 +42,6 @@ public class days : MonoBehaviour
         {
             LoadNextDay();
         }
-    }
-
-    void advanceDay()
-    {
-        dayNum++;
     }
 
     IEnumerator FadeInFromBlack()
@@ -63,7 +70,6 @@ public class days : MonoBehaviour
 
     public void LoadNextDay()
     {
-        advanceDay();
         SceneManager.LoadScene(sceneNumber + 1);
     }
 

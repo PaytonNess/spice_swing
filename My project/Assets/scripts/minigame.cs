@@ -18,6 +18,7 @@ public class minigame : MonoBehaviour
     public GameObject Right_Arrow;
 
     public GameObject scriptHolder;
+    public GameObject uiScript;
     public minigame modifyQuality;
     public scoring scoreHelper;
 
@@ -48,7 +49,8 @@ public class minigame : MonoBehaviour
 
         scriptHolder = GameObject.Find("character");
         modifyQuality = scriptHolder.GetComponent<minigame>();
-        scoreHelper = scriptHolder.GetComponent<scoring>();
+        uiScript = GameObject.Find("UI Holder");
+        scoreHelper = uiScript.GetComponent<scoring>();
     }
 
     // Update is called once per frame
