@@ -30,7 +30,7 @@ public class days : MonoBehaviour
             LoadNextDay();
         }
 
-        if (Input.GetKeyDown(KeyCode.O))
+        /*if (Input.GetKeyDown(KeyCode.O))
         {
             StartCoroutine(FadeToBlack());
         }
@@ -41,7 +41,7 @@ public class days : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Y))
         {
             LoadNextDay();
-        }
+        }*/
     }
 
     IEnumerator FadeInFromBlack()

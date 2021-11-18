@@ -100,7 +100,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.02
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -146,4 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeHit: 0
   scriptHolder: {fileID: 0}
+  uiScript: {fileID: 0}
   callMinigame: {fileID: 0}
+  scoreChanger: {fileID: 0}
+  rb: {fileID: 7978486312557761843}

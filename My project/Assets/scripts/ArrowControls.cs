@@ -12,6 +12,7 @@ public class ArrowControls : MonoBehaviour
     public minigame callMinigame;
     public scoring scoreChanger;
     // Update is called once per frame
+    public Rigidbody2D rb;
 
     void Start()
     {
@@ -21,6 +22,8 @@ public class ArrowControls : MonoBehaviour
         callMinigame = scriptHolder.GetComponent<minigame>();
         uiScript = GameObject.Find("UI Holder");
         scoreChanger = uiScript.GetComponent<scoring>();
+
+        rb.velocity = new Vector2(0, -1);
     }
 
     void Update()

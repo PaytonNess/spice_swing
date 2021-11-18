@@ -7550,8 +7550,8 @@ MonoBehaviour:
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
+    m_MinSize: 1
+    m_MaxSize: 45
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -9969,7 +9969,14 @@ MonoBehaviour:
   spriteRenderer1: {fileID: 2038666082}
   spriteRenderer2: {fileID: 360359335}
   spriteRenderer3: {fileID: 133314263}
-  image: {fileID: 0}
+  anime0: {fileID: 0}
+  anime1: {fileID: 0}
+  anime2: {fileID: 0}
+  anime3: {fileID: 0}
+  object0: {fileID: 0}
+  object1: {fileID: 0}
+  object2: {fileID: 0}
+  object3: {fileID: 0}
   pos: 00000000000000000000000000000000
   another: 0
 --- !u!1 &1993347968
