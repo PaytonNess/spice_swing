@@ -26,6 +26,7 @@ public class minigame : MonoBehaviour
     public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
     private int dayNum = 1; //Holds day of week number
+    private int mgWaitTime = 2;
 
 
     private bool failedMG = false; //Has the player failed the minigame?
@@ -212,7 +213,7 @@ public class minigame : MonoBehaviour
         }
         notesList.Clear();
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(mgWaitTime);
 
         DeactivateMiniGame();
     }

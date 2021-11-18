@@ -25,6 +25,8 @@ public class days : MonoBehaviour
     {
         if(timeAccessor.dayDone)
         {
+            //Call winOrFail(customersServed) [in levelWinFail], check if numbers customers served means a successful day
+
             //Insert fade to black code
             StartCoroutine(FadeToBlack());
             LoadNextDay();
