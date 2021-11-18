@@ -31,16 +31,12 @@ public class interaction : MonoBehaviour
         mini = GetComponent<minigame>();
         _anim = GetComponent<Animator>();
         orders = GetComponent<custumers>();
-
+        order = -1;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (orders.pos[orders.another] == null)
-        {
-            Debug.Log("SAFJPKOSKNDKJFKMFDKNFKFN");
-        }
         if (orders != null)
         {
             if (orders.spriteRenderer0.enabled==true)
@@ -70,7 +66,7 @@ public class interaction : MonoBehaviour
 
                 break;
             default:
-                Debug.Log("error");
+                //Debug.Log("error");
                 break;
         };
     }
@@ -117,7 +113,7 @@ public class interaction : MonoBehaviour
 
                 break;
             default:
-                Debug.Log("error");
+                //Debug.Log("error");
                 break;
         };
 
@@ -139,21 +135,13 @@ public class interaction : MonoBehaviour
                             
                             mini.ResetMG();
                             mini.ResetQuality();
+                            hasVeggie = false;
                         }
                         else
                         {
                             //The food was successfully cooked
                             ischopped = true;
                         }
-                        //hasVeggie = false;
-
-
-                        //_anim.SetBool("food", hasCookFood);
-                        //mini.ActivateGame();
-                        //_anim.SetBool("raw", hasVeggie);
-                        //_anim.SetLayerWeight(rawlayer, wieght);
-                        //_anim.SetLayerWeight(layerfood,0);
-
                     }
                     break;
                 case 2:
@@ -169,20 +157,13 @@ public class interaction : MonoBehaviour
 
                             mini.ResetMG();
                             mini.ResetQuality();
+                            hasMeat = false;
                         }
                         else
                         {
                             //The food was successfully cooked
                             ischopped = true;
                         }
-                        //hasMeat = false;
-
-
-                        //_anim.SetBool("raw", hasMeat);
-                        //_anim.SetBool("food", hasCookFood);
-                        //mini.ActivateGame();
-                        //_anim.SetLayerWeight(rawlayer, wieght);
-                        //_anim.SetLayerWeight(layerfood, wieght);
                     }
                     break;
                 case 1:
@@ -195,14 +176,15 @@ public class interaction : MonoBehaviour
                         if (mini.mgFailed())
                         {
                             //The food did not get cooked.
-
+                            hasVeggie = false;
+                            hasMeat = false;
                             mini.ResetMG();
                             mini.ResetQuality();
                         }
                         else
                         {
                             //The food was successfully cooked
-                            ischopped = true;
+                            //ischopped = true;
                             if (hasMeat)
                             {
                                 needsM = false;
@@ -220,14 +202,6 @@ public class interaction : MonoBehaviour
                                 prep = true;
 
                         }
-                        //hasMeat = false;
-                        //hasVeggie = false;
-                        //_anim.SetBool("raw", hasFood);
-                        //_anim.SetBool("food", hasCookFood);
-                        //mini.ActivateGame();
-                        //_anim.SetLayerWeight(rawlayer, wieght);
-                        //_anim.SetLayerWeight(layerfood, wieght);
-
                     }
                     break;
                 case 0:
@@ -240,7 +214,7 @@ public class interaction : MonoBehaviour
                         if (mini.mgFailed())
                         {
                             //The food did not get cooked.
-
+                            hasGrain = false;
                             mini.ResetMG();
                             mini.ResetQuality();
                         }
@@ -255,12 +229,12 @@ public class interaction : MonoBehaviour
                                 prep = true;
                             ischopped = true;
                         }
-                        //hasGrain = false;
-                        //_anim.SetBool("raw", hasMeat);
-                        //_anim.SetBool("food", hasCookFood);
-                        //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -291,13 +265,13 @@ public class interaction : MonoBehaviour
                             ischopped = true;
                             needsV = false;
                         }
-
                        
-                        //_anim.SetBool("raw", hasMeat);
-                        //_anim.SetBool("food", hasCookFood);
-                        //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -316,7 +290,6 @@ public class interaction : MonoBehaviour
                     if (hasMeat)
                     {
                         //fishfry 
-                        //ischopped = true;
                         //call minigame
                         mini.ActivateGame();
                         //check minigame results
@@ -339,13 +312,16 @@ public class interaction : MonoBehaviour
                                 halfCooked = true;
                             needsM = false;
                         }
-
                         hasMeat = false;
-                        _anim.SetBool("raw", hasMeat);
+                        _anim.SetBool("raw", false);
                         _anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -383,6 +359,10 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -422,6 +402,10 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -461,6 +445,10 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -501,6 +489,10 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -538,11 +530,19 @@ public class interaction : MonoBehaviour
 
                         hasGrain = false;
                         ischopped = false;
-                        _anim.SetBool("raw", hasMeat);
+                        _anim.SetLayerWeight(M, -1);
+                        //_anim.SetLayerWeight(rawlayer, -1);
+                        _anim.SetLayerWeight(V, -1);
+
+                        _anim.SetBool("raw", hasGrain);
                         _anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
+                            _anim.SetLayerWeight(M, -1);
+                            _anim.SetLayerWeight(rawlayer, -1);
+                            _anim.SetLayerWeight(V, -1);
+
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
@@ -618,13 +618,17 @@ public class interaction : MonoBehaviour
             {
                 mini.ResetMG();
                 mini.ResetQuality();
-
+                hasGrain = false;
+                hasMeat = false;
+                hasVeggie = false;
                 hasCookFood = false;
                 _anim.SetBool("food", hasCookFood);
                 Debug.Log("served food");
                 //custumers orders = other.gameObject.GetComponent<custumers>();
                 orders.leave();
-                _anim.SetLayerWeight(layerfood, 0);
+                _anim.SetLayerWeight(M, -1);
+                _anim.SetLayerWeight(rawlayer, -1);
+                _anim.SetLayerWeight(V, -1);
                 _anim.SetLayerWeight(regurallayer, wieght);
 
             }

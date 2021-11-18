@@ -41,7 +41,7 @@ public class custumers : MonoBehaviour
     //delay before custumer shows up
     private int delay = 5;
     //max custumers that show up that day
-    private int maxCustomers = 4;
+    private int maxCustomers = 10;
     //the time that has passed for that one custumer
     private int timepassed;
     //should custumers still spawn
@@ -138,11 +138,11 @@ public class custumers : MonoBehaviour
                             spriteRenderer0.enabled = true;
                             break;
                         default:
-                            Debug.Log("error");
+                            //Debug.Log("error");
                             break;
                     }
                 //Debug.Log("GOD WORK");
-                Debug.Log(j + " this is j");
+                //Debug.Log(j + " this is j");
 
                 j += 1;
                 if (j >= 4)
@@ -207,14 +207,14 @@ public class custumers : MonoBehaviour
             {
 
                 cus.mood = 2;
-                Debug.Log("upset");
+                //Debug.Log("upset");
                 notmad = false;
             }
             if (t > (cus.waitTime / 3) && !notmad)
             {
                 yield return new WaitForSeconds(cus.waitTime / 3);
                 cus.mood = 1;
-                Debug.Log("angry");
+                //Debug.Log("angry");
             }
             if (t > (cus.waitTime))
             {
