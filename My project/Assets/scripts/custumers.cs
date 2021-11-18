@@ -37,8 +37,8 @@ public class custumers : MonoBehaviour
 
     }
     public custmor[] cust;
-    //this is in seconds
-    //delay before custumer shows up
+    //delay before custumer shows up (this is in seconds)
+
     private int delay = 5;
     //max custumers that show up that day
     private int maxCustomers = 10;
