@@ -41,7 +41,7 @@ public class custumers : MonoBehaviour
 
     private int delay = 5;
     //max custumers that show up that day
-    private int maxCustomers = 10;
+    private int maxCustomers = 15;
     //the time that has passed for that one custumer
     private int timepassed;
     //should custumers still spawn
@@ -75,28 +75,28 @@ public class custumers : MonoBehaviour
         switch (j)
         {
             case 3:
-                spawn = spriteRenderer3.enabled = true; ;
+                spawn = spriteRenderer3.enabled = true;
                 object3.velocity = LOL;
                 anime3.SetBool("walking", true);
 
                 j = 0;
                 break;
             case 2:
-                spawn = spriteRenderer2.enabled;
+                spawn = spriteRenderer2.enabled = true; 
                 object2.velocity = LOL;
                 anime2.SetBool("walking", true);
 
 
                 break;
             case 1:
-                spawn = spriteRenderer1.enabled;
+                spawn = spriteRenderer1.enabled = true; 
                 object1.velocity = LOL;
                 anime1.SetBool("walking", true);
 
 
                 break;
             case 0:
-                spawn = spriteRenderer0.enabled;
+                spawn = spriteRenderer0.enabled = true;
                 object0.velocity = LOL;
                 anime0.SetBool("walking", true);
 

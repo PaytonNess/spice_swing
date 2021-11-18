@@ -10,7 +10,7 @@ public class levelWinFail : MonoBehaviour
     void Start()
     {
         _anim = GetComponent<Animator>();
-        MiniGame = GetComponent<minigame>();
+        //MiniGame = GetComponent<minigame>();
     }
 
     // Update is called once per frame
