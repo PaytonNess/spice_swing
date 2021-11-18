@@ -629,10 +629,10 @@ public class interaction : MonoBehaviour
                 _anim.SetLayerWeight(M, -1);
                 _anim.SetLayerWeight(rawlayer, -1);
                 _anim.SetLayerWeight(V, -1);
-                _anim.SetLayerWeight(regurallayer, wieght);
-
+                _anim.SetLayerWeight(regurallayer, 20);
+    
             }
         }
-    }
+}
 }
 

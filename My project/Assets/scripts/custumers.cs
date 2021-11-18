@@ -17,6 +17,8 @@ public class custumers : MonoBehaviour
     public Rigidbody2D object2;
     public Rigidbody2D object3;
 
+    public int custServe = 0;
+
   
     public class custmor
     {
@@ -82,21 +84,21 @@ public class custumers : MonoBehaviour
                 j = 0;
                 break;
             case 2:
-                spawn = spriteRenderer2.enabled = true; 
+                spawn = spriteRenderer2.enabled; 
                 object2.velocity = LOL;
                 anime2.SetBool("walking", true);
 
 
                 break;
             case 1:
-                spawn = spriteRenderer1.enabled = true; 
+                spawn = spriteRenderer1.enabled; 
                 object1.velocity = LOL;
                 anime1.SetBool("walking", true);
 
 
                 break;
             case 0:
-                spawn = spriteRenderer0.enabled = true;
+                spawn = spriteRenderer0.enabled;
                 object0.velocity = LOL;
                 anime0.SetBool("walking", true);
 
@@ -231,19 +233,20 @@ public class custumers : MonoBehaviour
             spriteRenderer0.enabled = false;
             //object0.transform.Translate(-5, 1, 0);
             another += 1;
+            custServe++;
         }
         else if (spriteRenderer1.enabled == true && another == 1)
         {
             spriteRenderer1.enabled = false;
             object1.transform.Translate(5, 0, 0);
-
+            custServe++;
             another += 1;
         }
         else if (spriteRenderer2.enabled == true && another == 2)
         {
             spriteRenderer2.enabled = false;
             object2.transform.Translate(5, 0, 0);
-
+            custServe++;
             another += 1;
         }
         else if (spriteRenderer3.enabled == true && another == 3)
@@ -251,6 +254,7 @@ public class custumers : MonoBehaviour
             spriteRenderer3.enabled = false;
             object3.transform.Translate(5, 0, 0);
             another = 0;
+            custServe++;
         }
     }
 
