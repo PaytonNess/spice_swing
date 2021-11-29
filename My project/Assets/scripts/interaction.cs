@@ -31,7 +31,7 @@ public class interaction : MonoBehaviour
         mini = GetComponent<minigame>();
         _anim = GetComponent<Animator>();
         orders = GetComponent<custumers>();
-        order = -1;
+        order = 1;
     }
 
     // Update is called once per frame
@@ -231,9 +231,9 @@ public class interaction : MonoBehaviour
                         }
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -268,9 +268,9 @@ public class interaction : MonoBehaviour
                        
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -318,9 +318,9 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -359,9 +359,9 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -402,9 +402,9 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -445,9 +445,9 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -489,9 +489,9 @@ public class interaction : MonoBehaviour
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -530,18 +530,18 @@ public class interaction : MonoBehaviour
 
                         hasGrain = false;
                         ischopped = false;
-                        _anim.SetLayerWeight(M, -1);
-                        //_anim.SetLayerWeight(rawlayer, -1);
-                        _anim.SetLayerWeight(V, -1);
+                        _anim.SetLayerWeight(M, 1);
+                        //_anim.SetLayerWeight(rawlayer, 1);
+                        _anim.SetLayerWeight(V, 1);
 
                         _anim.SetBool("raw", hasGrain);
                         _anim.SetBool("food", hasCookFood);
                         //mini.ActivateGame();
                         if (hasCookFood)
                         {
-                            _anim.SetLayerWeight(M, -1);
-                            _anim.SetLayerWeight(rawlayer, -1);
-                            _anim.SetLayerWeight(V, -1);
+                            _anim.SetLayerWeight(M, 1);
+                            _anim.SetLayerWeight(rawlayer, 1);
+                            _anim.SetLayerWeight(V, 1);
 
                             _anim.SetLayerWeight(rawlayer, 0);
                             _anim.SetLayerWeight(layerfood, wieght);
@@ -559,7 +559,7 @@ public class interaction : MonoBehaviour
         {
             Debug.Log("has food");
             hasFood = true;
-            _anim.SetLayerWeight(regurallayer, -1);
+            _anim.SetLayerWeight(regurallayer, 1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasFood);
         }
@@ -570,9 +570,9 @@ public class interaction : MonoBehaviour
             hasVeggie = false;
             hasGrain = false;
             _anim.SetBool("raw", hasMeat);
-            _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(V, -1);
-            _anim.SetLayerWeight(rawlayer, -1);
+            _anim.SetLayerWeight(regurallayer, 1);
+            _anim.SetLayerWeight(V, 1);
+            _anim.SetLayerWeight(rawlayer, 1);
 
             _anim.SetLayerWeight(M, wieght);
             _anim.SetBool("raw", hasMeat);
@@ -586,9 +586,9 @@ public class interaction : MonoBehaviour
             hasGrain = false;
 
             _anim.SetBool("raw", hasVeggie);
-            _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(M, -1);
-            _anim.SetLayerWeight(rawlayer, -1);
+            _anim.SetLayerWeight(regurallayer, 1);
+            _anim.SetLayerWeight(M, 1);
+            _anim.SetLayerWeight(rawlayer, 1);
 
             _anim.SetLayerWeight(V, wieght);
 
@@ -603,9 +603,9 @@ public class interaction : MonoBehaviour
             hasMeat = false;
 
             _anim.SetBool("raw", hasGrain);
-            _anim.SetLayerWeight(regurallayer, -1);
-            _anim.SetLayerWeight(V, -1);
-            _anim.SetLayerWeight(M, -1);
+            _anim.SetLayerWeight(regurallayer, 1);
+            _anim.SetLayerWeight(V, 1);
+            _anim.SetLayerWeight(M, 1);
             _anim.SetLayerWeight(rawlayer, wieght);
             _anim.SetBool("raw", hasGrain);
 
@@ -626,9 +626,9 @@ public class interaction : MonoBehaviour
                 Debug.Log("served food");
                 //custumers orders = other.gameObject.GetComponent<custumers>();
                 orders.leave();
-                _anim.SetLayerWeight(M, -1);
-                _anim.SetLayerWeight(rawlayer, -1);
-                _anim.SetLayerWeight(V, -1);
+                _anim.SetLayerWeight(M, 1);
+                _anim.SetLayerWeight(rawlayer, 1);
+                _anim.SetLayerWeight(V, 1);
                 _anim.SetLayerWeight(regurallayer, 20);
     
             }

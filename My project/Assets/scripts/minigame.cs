@@ -19,13 +19,17 @@ public class minigame : MonoBehaviour
 
     public GameObject scriptHolder;
     public GameObject uiScript;
+    public GameObject daysScript;
     public minigame modifyQuality;
     public scoring scoreHelper;
     public movement move;
+    public days days;
+    public timer timeAccessor;
+
     public int quality;
     public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
-    private int dayNum = 1; //Holds day of week number
+    private int dayNum; //Holds day of week number
     private int mgWaitTime = 2;
 
 
@@ -54,14 +58,16 @@ public class minigame : MonoBehaviour
         modifyQuality = scriptHolder.GetComponent<minigame>();
         uiScript = GameObject.Find("UI Holder");
         scoreHelper = uiScript.GetComponent<scoring>();
+        timeAccessor = uiScript.GetComponent<timer>();
+        daysScript = GameObject.Find("FadeOutScreen");
+        days = daysScript.GetComponent<days>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        //TODO: If quality meter reaches 0, the dish is failed [Not implemented yet]
-        if (getQuality() <= 0 && destroyedArrows == false)
+        
+        if ((getQuality() <= 0 && destroyedArrows == false) || timeAccessor.dayDone == true)
         {
             GameObject[] arrowsGenerated;
 
@@ -199,16 +205,15 @@ public class minigame : MonoBehaviour
         failedMG = false;
     }
 
-    //TODO: Add check to see (if success, then part of recipe is complete.)
     IEnumerator Gamestart()
     {
         //Randomizes game notes that will drop down
-        notesList = randomizeNotes(numOfNotes[dayNum - 1]);
+        notesList = randomizeNotes(numOfNotes[days.getDayNum() - 1]);
 
         //Debug.Log("Made it to Gamestart");
-        for (int i = 0; i < numOfNotes[dayNum - 1]; i++)
+        for (int i = 0; i < numOfNotes[days.getDayNum() - 1]; i++)
         {
-            yield return new WaitForSeconds(notePace[dayNum - 1]);
+            yield return new WaitForSeconds(notePace[days.getDayNum() - 1]);
             GameObject gameObject = Instantiate(notesList[i]) as GameObject;
         }
         notesList.Clear();

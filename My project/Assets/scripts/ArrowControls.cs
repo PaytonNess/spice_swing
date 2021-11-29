@@ -17,11 +17,12 @@ public class ArrowControls : MonoBehaviour
     void Start()
     {
         canBeHit = false;
-
+      
         scriptHolder = GameObject.Find("character");
         callMinigame = scriptHolder.GetComponent<minigame>();
         uiScript = GameObject.Find("UI Holder");
         scoreChanger = uiScript.GetComponent<scoring>();
+        rb = GetComponent<Rigidbody2D>();
 
         rb.velocity = new Vector2(0, -1);
     }

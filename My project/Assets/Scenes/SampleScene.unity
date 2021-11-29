@@ -7693,7 +7693,7 @@ MonoBehaviour:
   timerText: {fileID: 1338025778}
   rushHourStart: 60
   rushHourEnd: 300
-  dayLength: 360
+  dayLength: 10
   dayDone: 0
 --- !u!114 &148194756
 MonoBehaviour:
@@ -9807,6 +9807,7 @@ GameObject:
   - component: {fileID: 1974312127}
   - component: {fileID: 1974312134}
   - component: {fileID: 1974312135}
+  - component: {fileID: 1974312136}
   m_Layer: 0
   m_Name: character
   m_TagString: Player
@@ -10004,9 +10005,11 @@ MonoBehaviour:
   Right_Arrow: {fileID: 480766670294908770, guid: 61ae4fc5f2ec03c40817e538d9c17a0a, type: 3}
   scriptHolder: {fileID: 0}
   uiScript: {fileID: 0}
+  daysScript: {fileID: 0}
   modifyQuality: {fileID: 0}
   scoreHelper: {fileID: 0}
   move: {fileID: 0}
+  days: {fileID: 0}
   quality: 0
   qualityStart: 3
   qualityMax: 10
@@ -10034,8 +10037,23 @@ MonoBehaviour:
   object1: {fileID: 2038666083}
   object2: {fileID: 360359336}
   object3: {fileID: 133314264}
+  custServe: 0
   pos: 00000000000000000000000000000000
   another: 0
+--- !u!114 &1974312136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974312126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea8f8f7b6a392d04e9773e410830a3ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scriptHolder: {fileID: 0}
+  customerFunc: {fileID: 0}
 --- !u!1 &1993347968
 GameObject:
   m_ObjectHideFlags: 0
@@ -10241,7 +10259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptHolder: {fileID: 0}
   timeAccessor: {fileID: 0}
-  dayNum: 1
+  move: {fileID: 0}
+  charScript: {fileID: 0}
+  checkWF: {fileID: 0}
 --- !u!1001 &2014880795
 PrefabInstance:
   m_ObjectHideFlags: 0

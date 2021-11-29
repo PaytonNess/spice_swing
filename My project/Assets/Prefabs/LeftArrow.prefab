@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: -8298427374731689076}
   - component: {fileID: -3764167830808258512}
   - component: {fileID: -6221221505472644553}
-  - component: {fileID: 7067042294072710217}
   m_Layer: 0
   m_Name: LeftArrow
   m_TagString: LeftArrow
@@ -147,18 +146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canBeHit: 0
   scriptHolder: {fileID: 0}
+  uiScript: {fileID: 0}
   callMinigame: {fileID: 0}
   scoreChanger: {fileID: 0}
---- !u!114 &7067042294072710217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6474271757705305509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 444f019ddac41da4cad59e2de57b3c81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   rb: {fileID: -8298427374731689076}

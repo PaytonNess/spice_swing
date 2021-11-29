@@ -7,29 +7,55 @@ public class days : MonoBehaviour
 {
     public GameObject scriptHolder;
     public timer timeAccessor;
+    public movement move;
 
-    public int dayNum = 1;
+    public GameObject charScript;
+    public levelWinFail checkWF;
+    private Animator _anim;
+    
+    private int temp = 0;
+
+    private int dayNum;
     private float fadeSpeed = 5.0f;
     private int sceneNumber;
+    private bool endSequence = false;
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FadeInFromBlack());
         sceneNumber = SceneManager.GetActiveScene().buildIndex;
+        dayNum = sceneNumber + 1;
+        StartCoroutine(FadeInFromBlack());
         scriptHolder = GameObject.Find("UI Holder"); //TimeHolder is an empty game object. It should be replaced by UI component in the future.
         timeAccessor = scriptHolder.GetComponent<timer>();
+        charScript = GameObject.Find("character");
+        checkWF = charScript.GetComponent<levelWinFail>();
+
+        _anim = charScript.GetComponent<Animator>();
+        move = charScript.GetComponent<movement>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(timeAccessor.dayDone)
+        if(timeAccessor.dayDone && !endSequence)
         {
-            //Call winOrFail(customersServed) [in levelWinFail], check if numbers customers served means a successful day
+            endSequence = true;
 
-            //Insert fade to black code
-            StartCoroutine(FadeToBlack());
-            LoadNextDay();
+            //Stops player movement after the day has concluded
+            //BUG: Players still in motion after day timer ends have drift
+            move.enabled = false;
+
+            //Plays win or fail animation upon day's end
+            StartCoroutine(WinFailCheck());
+
+
+           /* if (temp == 500)
+            {
+                //Insert fade to black code
+                StartCoroutine(FadeToBlack());
+                LoadNextDay();
+            }
+            temp++;*/
         }
 
         /*if (Input.GetKeyDown(KeyCode.O))
@@ -44,6 +70,24 @@ public class days : MonoBehaviour
         {
             LoadNextDay();
         }*/
+    }
+
+    IEnumerator WinFailCheck()
+    {
+        Debug.Log("WinFailCheck called");
+       int baseLayer = _anim.GetLayerIndex("Base Layer");
+        for (int i = 1; i < 6; i++)
+        {
+            _anim.SetLayerWeight(i, 0);
+        }
+
+        _anim.SetLayerWeight(baseLayer, 1000);
+        Debug.Log(_anim.GetLayerWeight(0));
+        checkWF.winOrFail();
+
+        yield return new WaitForSeconds(7);
+
+        StartCoroutine(FadeToBlack());
     }
 
     IEnumerator FadeInFromBlack()
@@ -66,6 +110,8 @@ public class days : MonoBehaviour
             float fadeAmount = blackScreen.a + (fadeSpeed * Time.deltaTime);
             blackScreen = new Color(blackScreen.r, blackScreen.g, blackScreen.b, fadeAmount);
             this.GetComponent<Renderer>().material.color = blackScreen;
+
+            LoadNextDay();
             yield return null;
         }
     }
@@ -78,5 +124,10 @@ public class days : MonoBehaviour
     public void LoadSameDay()
     {
         SceneManager.LoadScene(sceneNumber);
+    }
+
+    public int getDayNum()
+    {
+        return dayNum;
     }
 }
