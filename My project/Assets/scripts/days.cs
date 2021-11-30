@@ -16,7 +16,7 @@ public class days : MonoBehaviour
     private int temp = 0;
 
     private int dayNum;
-    private float fadeSpeed = 5.0f;
+    private float fadeSpeed = 1.0f;
     private int sceneNumber;
     private bool endSequence = false;
     // Start is called before the first frame update
@@ -111,9 +111,16 @@ public class days : MonoBehaviour
             blackScreen = new Color(blackScreen.r, blackScreen.g, blackScreen.b, fadeAmount);
             this.GetComponent<Renderer>().material.color = blackScreen;
 
-            LoadNextDay();
-            yield return null;
         }
+        if (_anim.GetBool("levelWin"))
+        {
+            LoadNextDay();
+        }
+        else
+        {
+            LoadSameDay();
+        }
+            yield return null;
     }
 
     public void LoadNextDay()

@@ -7853,7 +7853,7 @@ MonoBehaviour:
   timerText: {fileID: 1338025778}
   rushHourStart: 60
   rushHourEnd: 300
-  dayLength: 10
+  dayLength: 360
   dayDone: 0
 --- !u!114 &148194756
 MonoBehaviour:
@@ -11159,16 +11159,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e98aed7c674f5c4a99c1d798cd39e8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  recipe1: {fileID: 657716115}
-  recipe2: {fileID: 87560642}
-  recipe3: {fileID: 1650701523}
-  recipe4: {fileID: 225502408}
-  button1: {fileID: 101309486}
-  button2: {fileID: 928465712}
-  button3: {fileID: 448171719}
-  button4: {fileID: 1880674818}
-  button5: {fileID: 1257004781}
-  button6: {fileID: 502197141}
+  move: {fileID: 0}
+  hasMeat: 0
+  hasGrain: 0
+  hasVeggie: 0
+  hasFood: 0
+  hasCookFood: 0
+  halfCooked: 0
 --- !u!114 &1974312134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11199,6 +11196,7 @@ MonoBehaviour:
   scoreHelper: {fileID: 0}
   move: {fileID: 0}
   days: {fileID: 0}
+  timeAccessor: {fileID: 0}
   quality: 0
   qualityStart: 3
   qualityMax: 10

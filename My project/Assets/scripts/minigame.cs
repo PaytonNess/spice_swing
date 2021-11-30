@@ -72,7 +72,6 @@ public class minigame : MonoBehaviour
             GameObject[] arrowsGenerated;
 
             destroyedArrows = true;
-            //Debug.Log("MG Failed");
             failedMG = true;
             arrowsGenerated = GameObject.FindGameObjectsWithTag("LeftArrow");
             DestroyArrows(arrowsGenerated);
@@ -131,7 +130,7 @@ public class minigame : MonoBehaviour
             Destroy(other.gameObject);
 
             modifyQuality.UpdateQuality(-1);
-            scoreHelper.setMultiplier(false);
+            //scoreHelper.setMultiplier(false);
         }
     }
 

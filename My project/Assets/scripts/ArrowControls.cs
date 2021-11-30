@@ -37,7 +37,7 @@ public class ArrowControls : MonoBehaviour
                 callMinigame.UpdateQuality(1);
 
                 scoreChanger.setScore(100);
-                scoreChanger.setMultiplier(true);
+                //scoreChanger.setMultiplier(true);
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow) && this.gameObject.tag == "UpArrow")
             {
@@ -45,7 +45,7 @@ public class ArrowControls : MonoBehaviour
                 callMinigame.UpdateQuality(1);
 
                 scoreChanger.setScore(100);
-                scoreChanger.setMultiplier(true);
+                //scoreChanger.setMultiplier(true);
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow) && this.gameObject.tag == "DownArrow")
             {
@@ -53,7 +53,7 @@ public class ArrowControls : MonoBehaviour
                 callMinigame.UpdateQuality(1);
 
                 scoreChanger.setScore(100);
-                scoreChanger.setMultiplier(true);
+                //scoreChanger.setMultiplier(true);
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow) && this.gameObject.tag == "RightArrow")
             {
@@ -61,7 +61,7 @@ public class ArrowControls : MonoBehaviour
                 callMinigame.UpdateQuality(1);
 
                 scoreChanger.setScore(100);
-                scoreChanger.setMultiplier(true);
+                //scoreChanger.setMultiplier(true);
             }
         }
     }

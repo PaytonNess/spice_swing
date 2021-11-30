@@ -38,7 +38,7 @@ public class scoring : MonoBehaviour
         score = 0;
     }
 
-    public void setMultiplier(bool streak)
+    /*public void setMultiplier(bool streak)
     {
         if (streak)
         {
@@ -48,5 +48,5 @@ public class scoring : MonoBehaviour
         {
             multiplier = 1;
         }
-    }
+    }*/
 }
