@@ -1,0 +1,1116 @@
+fileFormatVersion: 2
+guid: cce78f87996f65442bb947ec5cd6d486
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2626974073476523272
+    second: vegfall_0
+  - first:
+      213: -3313578034322056892
+    second: vegfall_1
+  - first:
+      213: 6167235209431947529
+    second: vegfall_2
+  - first:
+      213: -5583156454454708554
+    second: vegfall_3
+  - first:
+      213: 5748941209576456511
+    second: vegfall_4
+  - first:
+      213: 1527686217134395913
+    second: vegfall_5
+  - first:
+      213: -1275928169335798141
+    second: vegfall_6
+  - first:
+      213: -905579485019851898
+    second: vegfall_7
+  - first:
+      213: -3819138092706912275
+    second: vegfall_8
+  - first:
+      213: -8954372420475596298
+    second: vegfall_9
+  - first:
+      213: 7756893317359815767
+    second: vegfall_10
+  - first:
+      213: -7827562793463919189
+    second: vegfall_11
+  - first:
+      213: 1305652585296696631
+    second: vegfall_12
+  - first:
+      213: -303664308897150544
+    second: vegfall_13
+  - first:
+      213: -2889984377562602556
+    second: vegfall_14
+  - first:
+      213: 5439046269628018671
+    second: vegfall_15
+  - first:
+      213: 4284335207059074600
+    second: vegfall_16
+  - first:
+      213: 598795426764874697
+    second: vegfall_17
+  - first:
+      213: 942473253352749110
+    second: vegfall_18
+  - first:
+      213: 1280543150486657778
+    second: vegfall_19
+  - first:
+      213: 172021022587698068
+    second: vegfall_20
+  - first:
+      213: 7282024747035764037
+    second: vegfall_21
+  - first:
+      213: -6602275953147675168
+    second: vegfall_22
+  - first:
+      213: -9086915749806736699
+    second: vegfall_23
+  - first:
+      213: 3560314560024149656
+    second: vegfall_24
+  - first:
+      213: -5768038572528591168
+    second: vegfall_25
+  - first:
+      213: 6157176201522052979
+    second: vegfall_26
+  - first:
+      213: 234095682160252020
+    second: vegfall_27
+  - first:
+      213: 360137185754723188
+    second: vegfall_28
+  - first:
+      213: 2514734030127920440
+    second: vegfall_29
+  - first:
+      213: -3516073293517465335
+    second: vegfall_30
+  - first:
+      213: 928374909528090095
+    second: vegfall_31
+  - first:
+      213: -5572611977149071936
+    second: vegfall_32
+  - first:
+      213: -6346132158353525668
+    second: vegfall_33
+  - first:
+      213: 6239912991425331119
+    second: vegfall_34
+  - first:
+      213: -1510581218216790432
+    second: vegfall_35
+  - first:
+      213: -5308214738139455115
+    second: vegfall_36
+  - first:
+      213: 5269414179639800530
+    second: vegfall_37
+  - first:
+      213: 3167892044067159837
+    second: vegfall_38
+  - first:
+      213: 5234367526505867828
+    second: vegfall_39
+  - first:
+      213: -545729659848577451
+    second: vegfall_40
+  - first:
+      213: 4988398877579340215
+    second: vegfall_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vegfall_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa554c9ffc1b8bd0800000000000000
+      internalID: -2626974073476523272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44952b8755ec302d0800000000000000
+      internalID: -3313578034322056892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90919706fbb669550800000000000000
+      internalID: 6167235209431947529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b63cc619c4a482b0800000000000000
+      internalID: -5583156454454708554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31c867229758cf40800000000000000
+      internalID: 5748941209576456511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_5
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9025e8c358e633510800000000000000
+      internalID: 1527686217134395913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38643d3171efa4ee0800000000000000
+      internalID: -1275928169335798141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 770
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683b28f914cbe63f0800000000000000
+      internalID: -905579485019851898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7aa0ca322bffac0800000000000000
+      internalID: -3819138092706912275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f15ff2d9bdabb380800000000000000
+      internalID: -8954372420475596298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75c45d5df5506ab60800000000000000
+      internalID: 7756893317359815767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badc48e8c19ee5390800000000000000
+      internalID: -7827562793463919189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7351ea2db1c9e1210800000000000000
+      internalID: 1305652585296696631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b988318bea29cbf0800000000000000
+      internalID: -303664308897150544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3e3f83586b4e7d0800000000000000
+      internalID: -2889984377562602556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_15
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 616
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef6712d3cf5b7b40800000000000000
+      internalID: 5439046269628018671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ea473eb24057b30800000000000000
+      internalID: 4284335207059074600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3e271a4495f4800800000000000000
+      internalID: 598795426764874697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638b5643e66541d00800000000000000
+      internalID: 942473253352749110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fa1154f53765c110800000000000000
+      internalID: 1280543150486657778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b3d396534236200800000000000000
+      internalID: 172021022587698068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545aba4fce2fe0560800000000000000
+      internalID: 7282024747035764037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed778f30010064a0800000000000000
+      internalID: -6602275953147675168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_23
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 462
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cafdd4254ac4e180800000000000000
+      internalID: -9086915749806736699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ef3ee9a37c86130800000000000000
+      internalID: 3560314560024149656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_25
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce9ea98a7fc3ffa0800000000000000
+      internalID: -5768038572528591168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ff537122fa27550800000000000000
+      internalID: 6157176201522052979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_27
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4745d9a58ccaf3300800000000000000
+      internalID: 234095682160252020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_28
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473b153ccd67ff400800000000000000
+      internalID: 360137185754723188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_29
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8357c5ad64126e220800000000000000
+      internalID: 2514734030127920440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90957afe7f5643fc0800000000000000
+      internalID: -3516073293517465335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_31
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 308
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5aeccbf0042ec00800000000000000
+      internalID: 928374909528090095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd31f68eea1aa2b0800000000000000
+      internalID: -5572611977149071936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54b7abdc620ee7a0800000000000000
+      internalID: -6346132158353525668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_34
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf70432ecf989650800000000000000
+      internalID: 6239912991425331119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_35
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 066bfcba266590be0800000000000000
+      internalID: -1510581218216790432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57164bdd1de6556b0800000000000000
+      internalID: -5308214738139455115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_37
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d236df1748b02940800000000000000
+      internalID: 5269414179639800530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_38
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fb865a70d96fb20800000000000000
+      internalID: 3167892044067159837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_39
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 154
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ae831588534a840800000000000000
+      internalID: 5234367526505867828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ea45904cd2d68f0800000000000000
+      internalID: -545729659848577451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vegfall_41
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 96
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9e218795a5a3540800000000000000
+      internalID: 4988398877579340215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
