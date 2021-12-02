@@ -230,6 +230,8 @@ public class interaction : MonoBehaviour
                         fishanimate1.SetActive(true);
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
+                        StartCoroutine(CheckMini(ischopped, button4, fishanimate1));
+                        /**
                         if (mini.mgFailed())
                         {
                             //The food did not get cooked.
@@ -246,6 +248,7 @@ public class interaction : MonoBehaviour
                             button4.SetActive(true);
                         }
                         fishanimate1.SetActive(false);
+                        */
                     }
                     break;
                 case 2:
@@ -256,6 +259,8 @@ public class interaction : MonoBehaviour
                         gumboanime1.SetActive(true);
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
+                        StartCoroutine(CheckMini(ischopped, button2, gumboanime1));
+                        /**
                         if (mini.mgFailed())
                         {
                             //The food did not get cooked.
@@ -273,6 +278,7 @@ public class interaction : MonoBehaviour
 
                         }
                         gumboanime1.SetActive(false);
+                        */
                     }
                     break;
                 case 1:
@@ -353,27 +359,15 @@ public class interaction : MonoBehaviour
                         //call minigame
                         tast1.SetActive(true);
                         StartCoroutine(mini.ActivateGame());
-                        //check minigame results
-                        if (mini.mgFailed())
+                        if (prep)
                         {
-                            //The food did not get cooked.
-                            hasGrain = false;
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            prep = false;
+                            StartCoroutine(CheckMini(hasCookFood, button2, tast1));
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            if (prep)
-                            {
-                                hasCookFood = true;
-                            }
-                            else
-                                prep = true;
-                            ischopped = true;
-                            button2.SetActive(true);
-                        }
-                        tast1.SetActive(false);
+                            StartCoroutine(CheckMini(prep, button2, tast1));
+
+                        //check minigame results
                         if (hasCookFood)
                         {
                             _anim.SetLayerWeight(M, 0);
@@ -392,27 +386,13 @@ public class interaction : MonoBehaviour
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
+                        if (prep)
                         {
-                            //The food did not get cooked.
-
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            prep = false;
+                            StartCoroutine(CheckMini(hasCookFood, button5, tast3));
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            if (prep)
-                            {
-                                hasCookFood = true;
-                            }
-                            else
-                                prep = true;
-                            ischopped = true;
-                            needsV = false;
-                            button5.SetActive(true);
-                        }
-                        tast3.SetActive(false);
+                            StartCoroutine(CheckMini(prep, button5, tast3));
                         if (hasCookFood)
                         {
                             _anim.SetLayerWeight(M, 0);
@@ -444,27 +424,15 @@ public class interaction : MonoBehaviour
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
+                        if (halfCooked)
                         {
-                            //The food did not get cooked.
-
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            StartCoroutine(CheckMini(hasCookFood, button2, fishanimate3));
+                            //hasCookFood = true;
+                            halfCooked = false;
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            if (halfCooked)
-                            {
-                                hasCookFood = true;
-                                halfCooked = false;
-                            }
-                            else
-                                halfCooked = true;
-                            needsM = false;
-                            button2.SetActive(true);
-                        }
-                        fishanimate3.SetActive(false);
+                            StartCoroutine(CheckMini(halfCooked, button2, fishanimate3));
+
                         //hasMeat = false;
                         //hasMeat = false;
                         _anim.SetBool("raw", false);
@@ -489,30 +457,18 @@ public class interaction : MonoBehaviour
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
+                        if (halfCooked)
                         {
-                            //The food did not get cooked.
-
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            StartCoroutine(CheckMini(hasCookFood, button3, fishanimate2));
+                            //hasCookFood = true;
+                            halfCooked = false;
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            if (halfCooked)
-                            {
-                                hasCookFood = true;
-                                halfCooked = false;
-                            }
-                            else
-                                halfCooked = true;
-                            needsV = false;
-                            button5.SetActive(true);
-                        }
-                        fisganimate2.SetActive(false);
-                        //hasVeggie = false;
+                            StartCoroutine(CheckMini(halfCooked, button3, fishanimate2));
+
+                        hasVeggie = false;
                         ischopped = false;
-                        //needsV = false;
+                        needsV = false;
                         _anim.SetBool("raw", hasMeat);
                         _anim.SetBool("food", hasCookFood);
                         //StartCoroutine(mini.ActivateGame());
@@ -539,28 +495,35 @@ public class interaction : MonoBehaviour
                         gumboanime3.SetActive(true);
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
+                        if (halfCooked)
                         {
-                            //The food did not get cooked.
-
-                            hasGrain = false;
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            StartCoroutine(CheckMini(hasCookFood, button5, gumboanime3));
+                            halfCooked = false;
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            if (halfCooked)
-                            {
-                                hasCookFood = true;
-                                halfCooked = false;
-                            }
-                            else
-                                halfCooked = true;
-                            needsG = false;
-                            button5.SetActive(true);
-                        }
-                        gumboanime3.SetActive(false);
+                            StartCoroutine(CheckMini(halfCooked, button5, gumboanime3));
+
+                        //if (mini.mgFailed())
+                        //{
+                        //    //The food did not get cooked.
+                        //    hasGrain = false;
+                        //    mini.ResetMG();
+                        //    mini.ResetQuality();
+                        //}
+                        //else
+                        //{
+                        //    //The food was successfully cooked
+                        //    if (halfCooked)
+                        //    {
+                        //        hasCookFood = true;
+                        //        halfCooked = false;
+                        //    }
+                        //    else
+                        //        halfCooked = true;
+                        //    needsG = false;
+                        //    button5.SetActive(true);
+                        //}
+                        //gumboanime3.SetActive(false);
                         //hasGrain = false;
                         //hasGrain = false;
                         _anim.SetBool("raw", hasMeat);
@@ -582,32 +545,19 @@ public class interaction : MonoBehaviour
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
+                        if (halfCooked)
                         {
-                            //The food did not get cooked.
-
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            StartCoroutine(CheckMini(hasCookFood, button3, gumboanime2));
+                            halfCooked = false;
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            if (halfCooked)
-                            {
-                                hasCookFood = true;
-                                halfCooked = false;
-                            }
-                            else
-                                halfCooked = true;
-                            needsM = false;
-                            button3.SetActive(true);
-                        }
-                        gumboanime2.SetActive(false);
+                            StartCoroutine(CheckMini(halfCooked, button3, gumboanime2));
 
+                  
 
-                        //hasMeat = false;
+                        hasMeat = false;
                         ischopped = false;
-                        //needsM = false;
+                        needsM = false;
                         _anim.SetBool("raw", hasMeat);
                         _anim.SetBool("food", hasCookFood);
                         //StartCoroutine(mini.ActivateGame());
@@ -634,28 +584,31 @@ public class interaction : MonoBehaviour
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
-                        {
-                            //The food did not get cooked.
+                        
+                         StartCoroutine(CheckMini(hasCookFood, button5, clamchowder3));
 
-                            mini.ResetMG();
-                            mini.ResetQuality();
-                        }
-                        else
-                        {
-                            //The food was successfully cooked
-                            hasCookFood = true;
+                        //if (mini.mgFailed())
+                        //{
+                        //    //The food did not get cooked.
 
-                            hasVeggie = false;
-                            prep = false;
-                            hasMeat = false;
-                            ischopped = false;
-                            needsM = false;
-                            needsV = false;
+                        //    mini.ResetMG();
+                        //    mini.ResetQuality();
+                        //}
+                        //else
+                        //{
+                        //    //The food was successfully cooked
+                        //    hasCookFood = true;
 
-                            button5.SetActive(true);
-                        }
-                        clamchowder3.SetActive(false);
+                        //    hasVeggie = false;
+                        //    prep = false;
+                        //    hasMeat = false;
+                        //    ischopped = false;
+                        //    needsM = false;
+                        //    needsV = false;
+
+                        //    button5.SetActive(true);
+                        //}
+                        //clamchowder3.SetActive(false);
 
                         //_anim.SetBool("raw", hasMeat);
                         //_anim.SetBool("food", hasCookFood);
@@ -682,31 +635,40 @@ public class interaction : MonoBehaviour
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        if (mini.mgFailed())
+                        if (halfCooked)
                         {
-                            //The food did not get cooked.
-
-                            mini.ResetMG();
-                            mini.ResetQuality();
+                            StartCoroutine(CheckMini(hasCookFood, button3, tast2));
+                            halfCooked = false;
                         }
                         else
-                        {
-                            //The food was successfully cooked
-                            //hasCookFood = true;
-                            if (halfCooked)
-                            {
-                                hasCookFood = true;
-                                halfCooked = false;
-                            }
-                            else
-                                halfCooked = true;
-                            needsG = false;
+                            StartCoroutine(CheckMini(halfCooked, button3, tast2));
 
-                            button3.SetActive(true);
-                        }
-                        tast2.SetActive(false);
 
-                        //hasGrain = false;
+                        //if (mini.mgFailed())
+                        //{
+                        //    //The food did not get cooked.
+
+                        //    mini.ResetMG();
+                        //    mini.ResetQuality();
+                        //}
+                        //else
+                        //{
+                        //    //The food was successfully cooked
+                        //    //hasCookFood = true;
+                        //    if (halfCooked)
+                        //    {
+                        //        hasCookFood = true;
+                        //        halfCooked = false;
+                        //    }
+                        //    else
+                        //        halfCooked = true;
+                        //    needsG = false;
+
+                        //    button3.SetActive(true);
+                        //}
+                        //tast2.SetActive(false);
+
+                        hasGrain = false;
                         ischopped = false;
                         _anim.SetLayerWeight(M, 0);
                         //_anim.SetLayerWeight(rawlayer, 0);
