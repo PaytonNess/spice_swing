@@ -74,7 +74,7 @@ public class days : MonoBehaviour
 
     IEnumerator WinFailCheck()
     {
-        Debug.Log("WinFailCheck called");
+        //.Log("WinFailCheck called");
        int baseLayer = _anim.GetLayerIndex("Base Layer");
         for (int i = 1; i < 6; i++)
         {

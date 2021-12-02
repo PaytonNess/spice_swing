@@ -30,7 +30,8 @@ public class minigame : MonoBehaviour
     public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
     private int dayNum; //Holds day of week number
-    private int mgWaitTime = 2;
+    public int mgWaitTime = 2;
+   
 
 
     private bool failedMG = false; //Has the player failed the minigame?
@@ -100,22 +101,22 @@ public class minigame : MonoBehaviour
             if (noteChoice == 0)
             {
                 listOfNotes.Add(Left_Arrow);
-                //Debug.Log("List added left arrow");
+                ////.Log("List added left arrow");
             }
             else if (noteChoice == 1)
             {
                 listOfNotes.Add(Up_Arrow);
-                //Debug.Log("List added up arrow");
+                ////.Log("List added up arrow");
             }
             else if (noteChoice == 2)
             {
                 listOfNotes.Add(Down_Arrow);
-                //Debug.Log("List added down arrow");
+                ////.Log("List added down arrow");
             }
             else if (noteChoice == 3)
             {
                 listOfNotes.Add(Right_Arrow);
-                //Debug.Log("List added right arrow");
+                ////.Log("List added right arrow");
             }
         }
 
@@ -165,7 +166,7 @@ public class minigame : MonoBehaviour
 
     }
 
-    public void ActivateGame()
+    public IEnumerator ActivateGame()
     {
         move.enabled = false;
         MiniGameBG.SetActive(true);
@@ -177,8 +178,8 @@ public class minigame : MonoBehaviour
         RightArrowEnd.SetActive(true);
 
         StartCoroutine(Gamestart());
-
-    }
+        yield return new WaitForSeconds(mgWaitTime);
+    }//
 
     void DeactivateMiniGame()
     {
@@ -209,7 +210,7 @@ public class minigame : MonoBehaviour
         //Randomizes game notes that will drop down
         notesList = randomizeNotes(numOfNotes[days.getDayNum() - 1]);
 
-        //Debug.Log("Made it to Gamestart");
+        ////.Log("Made it to Gamestart");
         for (int i = 0; i < numOfNotes[days.getDayNum() - 1]; i++)
         {
             yield return new WaitForSeconds(notePace[days.getDayNum() - 1]);

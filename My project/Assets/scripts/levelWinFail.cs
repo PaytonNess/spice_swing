@@ -26,7 +26,7 @@ public class levelWinFail : MonoBehaviour
         _anim.SetBool("levelFail", customerFunc.custServe < custServedMin); 
         _anim.SetBool("levelWin", customerFunc.custServe >= custServedMin);
 
-        Debug.Log("LevelFail" + _anim.GetBool("levelFail"));
-        Debug.Log("LevelWin" + _anim.GetBool("levelWin"));
+        //.Log("LevelFail" + _anim.GetBool("levelFail"));
+        //.Log("LevelWin" + _anim.GetBool("levelWin"));
     }
 }

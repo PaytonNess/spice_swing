@@ -72,7 +72,7 @@ public class ArrowControls : MonoBehaviour
         if (other.tag == "Input Area")
         {
             canBeHit = true;
-            Debug.Log("An arrow is in the zone!");
+            //.Log("An arrow is in the zone!");
         }
 
         if (other.tag == "Out_Of_Bounds")
@@ -89,7 +89,7 @@ public class ArrowControls : MonoBehaviour
         if (other.tag == "Input Area")
         {
             canBeHit = false;
-            Debug.Log("An arrow is leaving the zone.");
+            //.Log("An arrow is leaving the zone.");
         }
     }
 }

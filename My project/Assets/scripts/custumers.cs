@@ -16,7 +16,7 @@ public class custumers : MonoBehaviour
     public Rigidbody2D object1;
     public Rigidbody2D object2;
     public Rigidbody2D object3;
-
+    public bool tut = false;
     public int custServe = 0;
 
   
@@ -58,6 +58,7 @@ public class custumers : MonoBehaviour
     private int j = 0;
     //loop for the smaller serving area
     public int another = 0;
+    private bool once = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -67,7 +68,8 @@ public class custumers : MonoBehaviour
         spriteRenderer1.enabled = false;
         spriteRenderer0.enabled = false;
     }
-
+    int getmax() { return maxCustomers; }
+    void setmax(int max) { maxCustomers = max; }
 
     IEnumerator Example()
     {
@@ -104,7 +106,7 @@ public class custumers : MonoBehaviour
 
                 break;
             default:
-                Debug.Log("error");
+                //.Log("error");
                 break;
         }
         
@@ -117,7 +119,7 @@ public class custumers : MonoBehaviour
 
                 int food = randOrder();
                 custmor person = new custmor(10, food);
-                Debug.Log(person.getOrder());
+                //Debug.Log(person.getOrder());
                 cust[temp] = person;
                 //StartCoroutine(waitTimer(cust[temp]));
                 temp++;
@@ -160,35 +162,100 @@ public class custumers : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (loop)
+        if (!tut)
         {
-            //Debug.Log("start");
-            StartCoroutine(Example());
-            loop = false;
-        }
-        if (object0.position.x <= -.9)
-        {
-            object0.velocity = new Vector2(0f, 0f);
-            anime0.SetBool("walking", false);
-        }
-        if (object1.position.x <= -.7)
-        {
-            object1.velocity = new Vector2(0f, 0f);
-            anime1.SetBool("walking", false);
-        }
+            if (loop)
+            {
+                //Debug.Log("start");
+                StartCoroutine(Example());
+                loop = false;
+            }
+            if (object0.position.x <= -.9)
+            {
+                object0.velocity = new Vector2(0f, 0f);
+                anime0.SetBool("walking", false);
+            }
+            if (object1.position.x <= -.7)
+            {
+                object1.velocity = new Vector2(0f, 0f);
+                anime1.SetBool("walking", false);
+            }
 
-        if (object2.position.x <= -.5)
-        {
-            object2.velocity = new Vector2(0f, 0f);
-            anime2.SetBool("walking", false);
-        }
+            if (object2.position.x <= -.5)
+            {
+                object2.velocity = new Vector2(0f, 0f);
+                anime2.SetBool("walking", false);
+            }
 
-        if (object3.position.x <= -.3)
-        {
-            object3.velocity = new Vector2(0f, 0f);
-            anime3.SetBool("walking", false);
+            if (object3.position.x <= -.3)
+            {
+                object3.velocity = new Vector2(0f, 0f);
+                anime3.SetBool("walking", false);
+            }
         }
+        else
+        {
+            if (!once)
+            {
+                
+                spriteRenderer3.enabled = true;
+                spriteRenderer2.enabled = true;
+                spriteRenderer1.enabled = true;
+                spriteRenderer0.enabled = true;
+            }
+            Vector2 LOL = new Vector2(-.5f, 0f);
+            /////////spawn = spriteRenderer3.enabled = true;
+            object3.velocity = LOL;
+            anime3.SetBool("walking", true);
 
+            //pawn = spriteRenderer2.enabled;
+            object2.velocity = LOL;
+            anime2.SetBool("walking", true);
+
+            //spawn = spriteRenderer1.enabled;
+            object1.velocity = LOL;
+            anime1.SetBool("walking", true);
+
+            //spawn = spriteRenderer0.enabled;
+            object0.velocity = LOL;
+            anime0.SetBool("walking", true);
+            
+            if (object0.position.x <= -.9)
+            {
+                object0.velocity = new Vector2(0f, 0f);
+                anime0.SetBool("walking", false);
+            }
+            if (object1.position.x <= -.7)
+            {
+                object1.velocity = new Vector2(0f, 0f);
+                anime1.SetBool("walking", false);
+            }
+
+            if (object2.position.x <= -.5)
+            {
+                object2.velocity = new Vector2(0f, 0f);
+                anime2.SetBool("walking", false);
+            }
+
+            if (object3.position.x <= -.3)
+            {
+                object3.velocity = new Vector2(0f, 0f);
+                anime3.SetBool("walking", false);
+            }
+            if (!once)
+            {
+                setmax(4);
+                //custmor person = new custmor(10, 0);
+                pos[0] = 0;
+                //person = new custmor(10, 1);
+                pos[1] = 1;
+                //person = new custmor(10, 2);
+                pos[2] = 2;
+                //person = new custmor(10, 3);
+                pos[3] = 3;
+                once = true;
+            }
+        }
     }
     //working 0,1,2,3
     public int randOrder()
@@ -231,9 +298,11 @@ public class custumers : MonoBehaviour
         if (spriteRenderer0.enabled == true && another == 0)
         {
             spriteRenderer0.enabled = false;
-            //object0.transform.Translate(-5, 1, 0);
+            object0.transform.Translate(5, 0, 0);
             another += 1;
             custServe++;
+            //os[0] = -1;
+            //Debug.Log(another +"this is another");
         }
         else if (spriteRenderer1.enabled == true && another == 1)
         {
@@ -241,6 +310,7 @@ public class custumers : MonoBehaviour
             object1.transform.Translate(5, 0, 0);
             custServe++;
             another += 1;
+            //pos[1] = -1;
         }
         else if (spriteRenderer2.enabled == true && another == 2)
         {
@@ -248,6 +318,7 @@ public class custumers : MonoBehaviour
             object2.transform.Translate(5, 0, 0);
             custServe++;
             another += 1;
+            //pos[2] = -1;
         }
         else if (spriteRenderer3.enabled == true && another == 3)
         {
@@ -255,6 +326,7 @@ public class custumers : MonoBehaviour
             object3.transform.Translate(5, 0, 0);
             another = 0;
             custServe++;
+            //pos[3] = -1;
         }
     }
 
