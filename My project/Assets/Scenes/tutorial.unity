@@ -10523,7 +10523,7 @@ MonoBehaviour:
   quality: 0
   qualityStart: 3
   qualityMax: 10
-  mgWaitTime: 2
+  mgWaitTime: 10
 --- !u!95 &1222948168
 Animator:
   serializedVersion: 3

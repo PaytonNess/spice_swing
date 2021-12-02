@@ -30,7 +30,7 @@ public class minigame : MonoBehaviour
     public int qualityStart = 3; //quality starts at 3; Max value of 10
     public int qualityMax = 10;
     private int dayNum; //Holds day of week number
-    public int mgWaitTime = 10;
+    public int mgWaitTime = 20;
    
 
 

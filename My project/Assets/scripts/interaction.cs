@@ -53,10 +53,60 @@ public class interaction : MonoBehaviour
     private bool needsG = false;
     private GameObject buttonmg;
     private GameObject animemg;
-
-    IEnumerator CheckMini(bool condiction,GameObject button, GameObject anime)
+    
+    IEnumerator CheckMini(/*l*/ bool condiction,GameObject button, GameObject anime)
     {
-        Debug.Log("AOSIDJKODHIOKJLDHIASJK");
+        Debug.Log(mini.mgWaitTime);
+
+        yield return new WaitForSeconds(mini.mgWaitTime);
+        if (mini.mgFailed())
+        {
+            //The food did not get cooked.
+
+            button.SetActive(false);
+            mini.ResetMG();
+            mini.ResetQuality();
+            hasVeggie = false;
+            hasMeat = false;
+            hasGrain = false;
+        }
+        else
+        {
+            //The food was successfully cooked
+            hasCookFood = true;
+            button.SetActive(true);
+        }
+        anime.SetActive(false);
+
+    }
+    IEnumerator Checkcook(/*l*/ bool condiction, GameObject button, GameObject anime)
+    {
+        Debug.Log(mini.mgWaitTime);
+
+        yield return new WaitForSeconds(mini.mgWaitTime);
+        if (mini.mgFailed())
+        {
+            //The food did not get cooked.
+
+            button.SetActive(false);
+            mini.ResetMG();
+            mini.ResetQuality();
+            hasVeggie = false;
+            hasMeat = false;
+            hasGrain = false;
+        }
+        else
+        {
+            //The food was successfully cooked
+            halfCooked = true;
+            button.SetActive(true);
+        }
+        anime.SetActive(false);
+
+    }
+
+    IEnumerator CheckPrep(/*l*/ bool condiction, GameObject button, GameObject anime)
+    {
         Debug.Log(mini.mgWaitTime);
 
         yield return new WaitForSeconds(mini.mgWaitTime);
@@ -75,6 +125,33 @@ public class interaction : MonoBehaviour
         {
             //The food was successfully cooked
             condiction = true;
+            prep = true;
+            button.SetActive(true);
+        }
+        anime.SetActive(false);
+
+    }
+    IEnumerator Checkchop(/*l*/ bool condiction, GameObject button, GameObject anime)
+    {
+        Debug.Log(mini.mgWaitTime);
+
+        yield return new WaitForSeconds(mini.mgWaitTime);
+        if (mini.mgFailed())
+        {
+            //The food did not get cooked.
+
+            button.SetActive(false);
+            mini.ResetMG();
+            mini.ResetQuality();
+            hasVeggie = false;
+            hasMeat = false;
+            hasGrain = false;
+        }
+        else
+        {
+            //The food was successfully cooked
+            condiction = true;
+            ischopped = true;
             button.SetActive(true);
         }
         anime.SetActive(false);
@@ -230,7 +307,7 @@ public class interaction : MonoBehaviour
                         fishanimate1.SetActive(true);
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        StartCoroutine(CheckMini(ischopped, button4, fishanimate1));
+                        StartCoroutine(Checkchop(/*l*/ ischopped, button4, fishanimate1));
                         /**
                         if (mini.mgFailed())
                         {
@@ -259,7 +336,7 @@ public class interaction : MonoBehaviour
                         gumboanime1.SetActive(true);
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
-                        StartCoroutine(CheckMini(ischopped, button2, gumboanime1));
+                        StartCoroutine(Checkchop(/*l*/ ischopped, button2, gumboanime1));
                         /**
                         if (mini.mgFailed())
                         {
@@ -305,51 +382,10 @@ public class interaction : MonoBehaviour
                         if (prep)
                         {
                             prep = false;
-                            StartCoroutine(CheckMini(ischopped, buttonmg, animemg));
+                            StartCoroutine(Checkchop(ischopped, buttonmg, animemg));
                         }
                         else
-                            StartCoroutine(CheckMini(prep, buttonmg, animemg));
-
-
-                        /*
-                        if (mini.mgFailed())
-                        {
-                            //The food did not get cooked.
-                            hasVeggie = false;
-                            hasMeat = false;
-                            mini.ResetMG();
-                            mini.ResetQuality();
-                            //.Log("failed");
-                            clamchowder1.SetActive(false);
-                            clamchowder2.SetActive(false);
-
-                        }
-                         else
-                        {
-                            //The food was successfully cooked
-                            //ischopped = true;
-                            if (hasMeat)
-                            {
-                                needsM = false;
-                                button2.SetActive(true);
-                            }
-                            else
-                            {
-                                needsV = false;
-                                button4.SetActive(true);
-                            }
-                            if (prep)
-                            {
-                                prep = false;
-                                ischopped = true;
-                            }
-                            else
-                                prep = true;
-                            //.Log("won");
-                            clamchowder1.SetActive(false);
-                            clamchowder2.SetActive(
-                        }
-                        */
+                            StartCoroutine(CheckPrep(/*l*/ prep, buttonmg, animemg));
                     }
                     break;
                 case 0:
@@ -362,10 +398,10 @@ public class interaction : MonoBehaviour
                         if (prep)
                         {
                             prep = false;
-                            StartCoroutine(CheckMini(hasCookFood, button2, tast1));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button2, tast1));
                         }
                         else
-                            StartCoroutine(CheckMini(prep, button2, tast1));
+                            StartCoroutine(CheckPrep(/*l*/ prep, button2, tast1));
 
                         //check minigame results
                         if (hasCookFood)
@@ -389,10 +425,10 @@ public class interaction : MonoBehaviour
                         if (prep)
                         {
                             prep = false;
-                            StartCoroutine(CheckMini(hasCookFood, button5, tast3));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button5, tast3));
                         }
                         else
-                            StartCoroutine(CheckMini(prep, button5, tast3));
+                            StartCoroutine(CheckPrep(/*l*/ prep, button5, tast3));
                         if (hasCookFood)
                         {
                             _anim.SetLayerWeight(M, 0);
@@ -426,12 +462,12 @@ public class interaction : MonoBehaviour
                         //check minigame results
                         if (halfCooked)
                         {
-                            StartCoroutine(CheckMini(hasCookFood, button2, fishanimate3));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button2, fishanimate3));
                             //hasCookFood = true;
                             halfCooked = false;
                         }
                         else
-                            StartCoroutine(CheckMini(halfCooked, button2, fishanimate3));
+                            StartCoroutine(Checkcook(/*l*/ halfCooked, button2, fishanimate3));
 
                         //hasMeat = false;
                         //hasMeat = false;
@@ -459,12 +495,12 @@ public class interaction : MonoBehaviour
                         //check minigame results
                         if (halfCooked)
                         {
-                            StartCoroutine(CheckMini(hasCookFood, button3, fishanimate2));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button3, fisganimate2));
                             //hasCookFood = true;
                             halfCooked = false;
                         }
                         else
-                            StartCoroutine(CheckMini(halfCooked, button3, fishanimate2));
+                            StartCoroutine(Checkcook(/*l*/ halfCooked, button3, fisganimate2));
 
                         hasVeggie = false;
                         ischopped = false;
@@ -497,11 +533,11 @@ public class interaction : MonoBehaviour
                         //check minigame results
                         if (halfCooked)
                         {
-                            StartCoroutine(CheckMini(hasCookFood, button5, gumboanime3));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button5, gumboanime3));
                             halfCooked = false;
                         }
                         else
-                            StartCoroutine(CheckMini(halfCooked, button5, gumboanime3));
+                            StartCoroutine(Checkcook(/*l*/ halfCooked, button5, gumboanime3));
 
                         //if (mini.mgFailed())
                         //{
@@ -547,11 +583,11 @@ public class interaction : MonoBehaviour
                         //check minigame results
                         if (halfCooked)
                         {
-                            StartCoroutine(CheckMini(hasCookFood, button3, gumboanime2));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button3, gumboanime2));
                             halfCooked = false;
                         }
                         else
-                            StartCoroutine(CheckMini(halfCooked, button3, gumboanime2));
+                            StartCoroutine(Checkcook(/*l*/ halfCooked, button3, gumboanime2));
 
                   
 
@@ -585,7 +621,7 @@ public class interaction : MonoBehaviour
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
                         
-                         StartCoroutine(CheckMini(hasCookFood, button5, clamchowder3));
+                         StartCoroutine(CheckMini(/*l*/ hasCookFood, button5, clamchowder3));
 
                         //if (mini.mgFailed())
                         //{
@@ -626,22 +662,23 @@ public class interaction : MonoBehaviour
                             _anim.SetLayerWeight(layerfood, wieght);
                         }
                     }
-                    break;
+                    break;//
                 case 0:
                     //avocado toast
-                    tast2.SetActive(true);
-                    if (hasGrain && ischopped)
+                    Debug.Log("toating " + ischopped);
+                    if (hasGrain && prep)
                     {
+                        tast2.SetActive(true);
                         //call minigame
                         StartCoroutine(mini.ActivateGame());
                         //check minigame results
                         if (halfCooked)
                         {
-                            StartCoroutine(CheckMini(hasCookFood, button3, tast2));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button3, tast2));
                             halfCooked = false;
                         }
                         else
-                            StartCoroutine(CheckMini(halfCooked, button3, tast2));
+                            StartCoroutine(Checkcook(/*l*/ halfCooked, button3, tast2));
 
 
                         //if (mini.mgFailed())
@@ -846,12 +883,9 @@ public class interaction : MonoBehaviour
             }
         }
     }
-
-
-
 }
 
-/*
+/**
 public class interaction : MonoBehaviour
 {
     public movement move;
