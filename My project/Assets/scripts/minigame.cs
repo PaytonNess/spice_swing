@@ -31,8 +31,8 @@ public class minigame : MonoBehaviour
     public int qualityMax = 10;
     private int dayNum; //Holds day of week number
     public int mgWaitTime = 20;
-   
 
+    public Vector3 temp;
 
     private bool failedMG = false; //Has the player failed the minigame?
     private bool destroyedArrows = false;
@@ -101,21 +101,29 @@ public class minigame : MonoBehaviour
             if (noteChoice == 0)
             {
                 listOfNotes.Add(Left_Arrow);
+                temp = new Vector3(LeftArrowEnd.transform.position.x, Left_Arrow.transform.position.y, 0);
+
                 ////.Log("List added left arrow");
             }
             else if (noteChoice == 1)
             {
                 listOfNotes.Add(Up_Arrow);
+                temp = new Vector3(UpArrowEnd.transform.position.x, Up_Arrow.transform.position.y, 0);
+
                 ////.Log("List added up arrow");
             }
             else if (noteChoice == 2)
             {
                 listOfNotes.Add(Down_Arrow);
+                temp = new Vector3(DownArrowEnd.transform.position.x, Down_Arrow.transform.position.y, 0);
+
                 ////.Log("List added down arrow");
             }
             else if (noteChoice == 3)
             {
                 listOfNotes.Add(Right_Arrow);
+                temp = new Vector3(RightArrowEnd.transform.position.x, Right_Arrow.transform.position.y, 0);
+
                 ////.Log("List added right arrow");
             }
         }
@@ -215,10 +223,20 @@ public class minigame : MonoBehaviour
         {
             yield return new WaitForSeconds(notePace[days.getDayNum() - 1]);
             GameObject gameObject = Instantiate(notesList[i]) as GameObject;
+            if (notesList[i] == Left_Arrow)
+            temp = new Vector3(LeftArrowEnd.transform.position.x, Left_Arrow.transform.position.y, 0);
+            if (notesList[i] == Up_Arrow)
+            temp = new Vector3(UpArrowEnd.transform.position.x, Up_Arrow.transform.position.y, 0);
+            if (notesList[i] == Down_Arrow)
+            temp = new Vector3(DownArrowEnd.transform.position.x, Down_Arrow.transform.position.y, 0);
+            if (notesList[i] == Right_Arrow)
+            temp = new Vector3(RightArrowEnd.transform.position.x, Right_Arrow.transform.position.y, 0);
+            gameObject.transform.position = temp;
+
         }
         notesList.Clear();
 
-        yield return new WaitForSeconds(mgWaitTime);
+        yield return new WaitForSeconds(2);
 
         DeactivateMiniGame();
     }
