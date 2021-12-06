@@ -66,3 +66,6 @@ TagManager:
   - name: FadeOutScreen
     uniqueID: 3706190681
     locked: 0
+  - name: FoodAnimations
+    uniqueID: 4055932987
+    locked: 0
