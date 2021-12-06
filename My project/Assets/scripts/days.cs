@@ -16,7 +16,7 @@ public class days : MonoBehaviour
     private int temp = 0;
 
     private int dayNum;
-    private float fadeSpeed = 1.0f;
+    private float fadeSpeed = 0.25f;
     private int sceneNumber;
     private bool endSequence = false;
     // Start is called before the first frame update
@@ -85,7 +85,7 @@ public class days : MonoBehaviour
         Debug.Log(_anim.GetLayerWeight(0));
         checkWF.winOrFail();
 
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(4);
 
         StartCoroutine(FadeToBlack());
     }
@@ -110,6 +110,12 @@ public class days : MonoBehaviour
             float fadeAmount = blackScreen.a + (fadeSpeed * Time.deltaTime);
             blackScreen = new Color(blackScreen.r, blackScreen.g, blackScreen.b, fadeAmount);
             this.GetComponent<Renderer>().material.color = blackScreen;
+            yield return null;
+            /*Color blackScreen = this.GetComponent<Renderer>().material.color;
+            float fadeAmount = blackScreen.a + (fadeSpeed * Time.deltaTime);
+            blackScreen = new Color(blackScreen.r, blackScreen.g, blackScreen.b, fadeAmount);
+            Debug.Log(blackScreen.a);
+            this.GetComponent<Renderer>().material.color = blackScreen;*/
 
         }
         if (_anim.GetBool("levelWin"))
