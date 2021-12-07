@@ -258,7 +258,7 @@ MonoBehaviour:
   quality: 0
   qualityStart: 3
   qualityMax: 10
-  mgWaitTime: 10
+  mgWaitTime: 8
   temp: {x: 0, y: 0, z: 0}
 --- !u!95 &63292701
 Animator:
@@ -11053,7 +11053,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 14
+  field of view: 16
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
