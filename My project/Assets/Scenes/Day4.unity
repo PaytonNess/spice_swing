@@ -12644,7 +12644,7 @@ MonoBehaviour:
   quality: 0
   qualityStart: 3
   qualityMax: 10
-  mgWaitTime: 12
+  mgWaitTime: 14
   temp: {x: 0, y: 0, z: 0}
 --- !u!114 &1974312135
 MonoBehaviour:

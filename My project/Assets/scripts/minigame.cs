@@ -211,6 +211,7 @@ public class minigame : MonoBehaviour
     public void ResetMG()
     {
         failedMG = false;
+        destroyedArrows = false;
     }
 
     IEnumerator Gamestart()
