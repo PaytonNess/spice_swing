@@ -43,7 +43,7 @@ public class custumers : MonoBehaviour
 
     private int delay = 5;
     //max custumers that show up that day
-    private int maxCustomers = 15;
+    public int maxCustomers = 15;
     //the time that has passed for that one custumer
     private int timepassed;
     //should custumers still spawn
