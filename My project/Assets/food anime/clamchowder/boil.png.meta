@@ -146,9 +146,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 396
-        width: 95
-        height: 120
+        y: 462
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,10 +166,10 @@ TextureImporter:
       name: boil_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 396
-        width: 95
-        height: 120
+        x: 96
+        y: 462
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: boil_2
       rect:
         serializedVersion: 2
-        x: 190
-        y: 396
-        width: 95
-        height: 120
+        x: 192
+        y: 462
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: boil_3
       rect:
         serializedVersion: 2
-        x: 285
-        y: 396
-        width: 95
-        height: 120
+        x: 288
+        y: 462
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: boil_4
       rect:
         serializedVersion: 2
-        x: 380
-        y: 396
-        width: 95
-        height: 120
+        x: 384
+        y: 462
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,9 +251,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 264
-        width: 95
-        height: 120
+        y: 308
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: boil_6
       rect:
         serializedVersion: 2
-        x: 95
-        y: 264
-        width: 95
-        height: 120
+        x: 96
+        y: 308
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: boil_7
       rect:
         serializedVersion: 2
-        x: 190
-        y: 264
-        width: 95
-        height: 120
+        x: 192
+        y: 308
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: boil_8
       rect:
         serializedVersion: 2
-        x: 285
-        y: 264
-        width: 95
-        height: 120
+        x: 288
+        y: 308
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: boil_9
       rect:
         serializedVersion: 2
-        x: 380
-        y: 264
-        width: 95
-        height: 120
+        x: 384
+        y: 308
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,9 +356,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 132
-        width: 95
-        height: 120
+        y: 154
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +376,10 @@ TextureImporter:
       name: boil_11
       rect:
         serializedVersion: 2
-        x: 95
-        y: 132
-        width: 95
-        height: 120
+        x: 96
+        y: 154
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,10 +397,10 @@ TextureImporter:
       name: boil_12
       rect:
         serializedVersion: 2
-        x: 190
-        y: 132
-        width: 95
-        height: 120
+        x: 192
+        y: 154
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: boil_13
       rect:
         serializedVersion: 2
-        x: 285
-        y: 132
-        width: 95
-        height: 120
+        x: 288
+        y: 154
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -439,10 +439,10 @@ TextureImporter:
       name: boil_14
       rect:
         serializedVersion: 2
-        x: 380
-        y: 132
-        width: 95
-        height: 120
+        x: 384
+        y: 154
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,8 +462,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 95
-        height: 120
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -481,10 +481,10 @@ TextureImporter:
       name: boil_16
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 0
-        width: 95
-        height: 120
+        width: 96
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

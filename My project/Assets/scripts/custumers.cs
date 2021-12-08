@@ -54,6 +54,7 @@ public class custumers : MonoBehaviour
     private bool wait = true;
     //postition of the customer
     public int[] pos = new int[4];
+
     //loop compent of spawning
     private int j = 0;
     //loop for the smaller serving area
@@ -67,6 +68,10 @@ public class custumers : MonoBehaviour
         spriteRenderer2.enabled = false;
         spriteRenderer1.enabled = false;
         spriteRenderer0.enabled = false;
+        pos[0] = -1;
+        pos[1] = -1;
+        pos[2] = -1;
+        pos[3] = -1;
     }
     int getmax() { return maxCustomers; }
     void setmax(int max) { maxCustomers = max; }
