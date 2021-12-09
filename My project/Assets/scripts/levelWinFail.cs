@@ -11,7 +11,7 @@ public class levelWinFail : MonoBehaviour
     public custumers customerFunc;
 
     //Minimum number of customers need to be served in ordered for win condition to be applied
-    private int custServedMin = 5;
+    private int custServedMin = 4;
     // Start is called before the first frame update
     void Start()
     {

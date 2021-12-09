@@ -9,7 +9,6 @@ public class timer : MonoBehaviour
     //Displays text with clock on screen.
     public Text timerText;
 
-
     //Will interact with Song method to change songs
     public float rushHourStart = 60.0f;
     public float rushHourEnd = 300.0f;
@@ -67,5 +66,4 @@ public class timer : MonoBehaviour
         gameTimer = 0;
         dayDone = false;
     }
-
 }

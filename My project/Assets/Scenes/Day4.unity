@@ -13101,6 +13101,7 @@ MonoBehaviour:
   move: {fileID: 0}
   charScript: {fileID: 0}
   checkWF: {fileID: 0}
+  checkDayProgress: {fileID: 0}
 --- !u!1001 &2014880795
 PrefabInstance:
   m_ObjectHideFlags: 0

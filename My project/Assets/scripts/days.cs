@@ -11,6 +11,7 @@ public class days : MonoBehaviour
 
     public GameObject charScript;
     public levelWinFail checkWF;
+    public custumers checkDayProgress;
     private Animator _anim;
     
     private int temp = 0;
@@ -29,6 +30,7 @@ public class days : MonoBehaviour
         timeAccessor = scriptHolder.GetComponent<timer>();
         charScript = GameObject.Find("character");
         checkWF = charScript.GetComponent<levelWinFail>();
+        checkDayProgress = charScript.GetComponent<custumers>();
 
         _anim = charScript.GetComponent<Animator>();
         move = charScript.GetComponent<movement>();
@@ -57,6 +59,8 @@ public class days : MonoBehaviour
             }
             temp++;*/
         }
+
+        allCustomersServed();
 
         /*if (Input.GetKeyDown(KeyCode.O))
         {
@@ -131,7 +135,14 @@ public class days : MonoBehaviour
 
     public void LoadNextDay()
     {
-        SceneManager.LoadScene(sceneNumber + 1);
+        if (sceneNumber + 1 < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(sceneNumber + 1);
+        }
+        else
+        {
+            Debug.Log("The next scene does not exist. Git gud.");
+        }
     }
 
     public void LoadSameDay()
@@ -142,5 +153,13 @@ public class days : MonoBehaviour
     public int getDayNum()
     {
         return dayNum;
+    }
+
+    void allCustomersServed()
+    {
+        if ((checkDayProgress.custServe == 4 && checkDayProgress.tut) || (checkDayProgress.custServe == checkDayProgress.maxCustomers))
+        {
+            timeAccessor.endDay();
+        }
     }
 }
