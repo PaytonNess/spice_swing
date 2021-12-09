@@ -169,6 +169,7 @@ public class custumers : MonoBehaviour
     {
         if (!tut)
         {
+            Debug.Log(pos[0]);
             if (loop)
             {
                 //Debug.Log("start");
@@ -198,7 +199,7 @@ public class custumers : MonoBehaviour
                 anime3.SetBool("walking", false);
             }
         }
-        else
+        else if (tut)
         {
             if (!once)
             {
@@ -229,6 +230,7 @@ public class custumers : MonoBehaviour
             {
                 object0.velocity = new Vector2(0f, 0f);
                 anime0.SetBool("walking", false);
+               
             }
             if (object1.position.x <= -.7)
             {
@@ -315,7 +317,7 @@ public class custumers : MonoBehaviour
             object1.transform.Translate(5, 0, 0);
             custServe++;
             another += 1;
-            //pos[1] = -1;
+            pos[1] = -1;
         }
         else if (spriteRenderer2.enabled == true && another == 2)
         {
@@ -323,7 +325,7 @@ public class custumers : MonoBehaviour
             object2.transform.Translate(5, 0, 0);
             custServe++;
             another += 1;
-            //pos[2] = -1;
+            pos[2] = -1;
         }
         else if (spriteRenderer3.enabled == true && another == 3)
         {
@@ -331,7 +333,7 @@ public class custumers : MonoBehaviour
             object3.transform.Translate(5, 0, 0);
             another = 0;
             custServe++;
-            //pos[3] = -1;
+            pos[3] = -1;
         }
     }
 

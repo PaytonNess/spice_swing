@@ -12801,8 +12801,8 @@ MonoBehaviour:
   clamchowder2: {fileID: 1525601254}
   clamchowder3: {fileID: 1668288100}
   tast1: {fileID: 1490974922}
-  tast2: {fileID: 653163125}
-  tast3: {fileID: 622872892}
+  tast2: {fileID: 622872892}
+  tast3: {fileID: 653163125}
   recipe1: {fileID: 657716115}
   recipe2: {fileID: 87560642}
   recipe3: {fileID: 1650701523}

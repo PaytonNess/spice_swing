@@ -301,8 +301,8 @@ MonoBehaviour:
   clamchowder2: {fileID: 598758192}
   clamchowder3: {fileID: 1055063415}
   tast1: {fileID: 1601230617}
-  tast2: {fileID: 1901449763}
-  tast3: {fileID: 1242069769}
+  tast2: {fileID: 1242069769}
+  tast3: {fileID: 1901449763}
   recipe1: {fileID: 305963897}
   recipe2: {fileID: 224632554}
   recipe3: {fileID: 140435716}
@@ -984,7 +984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2349656333854016844, guid: 9c83f25be62ae074cbe9bd9700fe40ef, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2349656333854016844, guid: 9c83f25be62ae074cbe9bd9700fe40ef, type: 3}
       propertyPath: m_TagString
@@ -1094,7 +1094,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7359857281266400624, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7898985533390344186, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
       propertyPath: m_RootOrder
@@ -9729,7 +9729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1794841292128039198, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2713062314419835340, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
       propertyPath: m_RootOrder
@@ -9837,6 +9837,7 @@ GameObject:
   - component: {fileID: 1019356442}
   - component: {fileID: 1019356441}
   - component: {fileID: 1019356440}
+  - component: {fileID: 1019356443}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: cooking
@@ -9933,6 +9934,32 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019356438}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!68 &1019356443
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019356438}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.49999976, y: 0}
+  - {x: 0.37818137, y: -0.60371983}
+  - {x: 0.48749846, y: -0.55826205}
+  - {x: 0.510111, y: -0.45219818}
+  - {x: 0.51968014, y: -0.32834724}
+  - {x: 0.50000024, y: 0}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1051899689
 GameObject:
   m_ObjectHideFlags: 0
@@ -10127,7 +10154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1055063416
 Transform:
   m_ObjectHideFlags: 0
@@ -10136,7 +10163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055063415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.038, y: -0.145, z: 0}
+  m_LocalPosition: {x: -0.038, y: 0.148, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 49796337}
@@ -11513,7 +11540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6594658693303441551, guid: 08bba33f47452754d8f5077d29fc536d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7884210817874813423, guid: 08bba33f47452754d8f5077d29fc536d, type: 3}
@@ -11819,7 +11846,7 @@ GameObject:
   - component: {fileID: 1388776652}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: cutting
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

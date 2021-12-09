@@ -11009,6 +11009,7 @@ MonoBehaviour:
   object3: {fileID: 921522023}
   tut: 0
   custServe: 0
+  maxCustomers: 15
   pos: 00000000000000000000000000000000
   another: 0
 --- !u!114 &1231057587
@@ -11088,8 +11089,8 @@ MonoBehaviour:
   clamchowder2: {fileID: 119362989}
   clamchowder3: {fileID: 2077941709}
   tast1: {fileID: 1448474124}
-  tast2: {fileID: 1838372381}
-  tast3: {fileID: 1258844584}
+  tast2: {fileID: 1258844584}
+  tast3: {fileID: 1838372381}
   recipe1: {fileID: 1523206725}
   recipe2: {fileID: 511137623}
   recipe3: {fileID: 1095303488}
