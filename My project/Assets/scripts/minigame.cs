@@ -51,7 +51,6 @@ public class minigame : MonoBehaviour
     {
         move = GetComponent<movement>();
 
-        DeactivateMiniGame();
         quality = 3;
         //Set number of notes in mini game.
 
@@ -62,6 +61,7 @@ public class minigame : MonoBehaviour
         timeAccessor = uiScript.GetComponent<timer>();
         daysScript = GameObject.Find("FadeOutScreen");
         days = daysScript.GetComponent<days>();
+        DeactivateMiniGame();
     }
 
     // Update is called once per frame
@@ -189,7 +189,7 @@ public class minigame : MonoBehaviour
         yield return new WaitForSeconds(mgWaitTime);
     }//
 
-    void DeactivateMiniGame()
+    public void DeactivateMiniGame()
     {
         MiniGameBG.SetActive(false);
         Out_Of_Bounds.SetActive(false);
@@ -198,7 +198,12 @@ public class minigame : MonoBehaviour
         UpArrowEnd.SetActive(false);
         DownArrowEnd.SetActive(false);
         RightArrowEnd.SetActive(false);
-        move.enabled = true;
+
+        //If the day is NOT finished, re-enable movement.
+        if (timeAccessor.dayDone != true)
+        {
+            move.enabled = true;
+        }
     }
 
     //Return true if the user failed the minigame, false if the minigame was passed.
