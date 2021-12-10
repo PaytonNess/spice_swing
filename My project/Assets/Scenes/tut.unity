@@ -10659,7 +10659,7 @@ MonoBehaviour:
   timerText: {fileID: 1218061269}
   rushHourStart: 60
   rushHourEnd: 300
-  dayLength: 10
+  dayLength: 360
   dayDone: 0
 --- !u!114 &1149754181
 MonoBehaviour:
