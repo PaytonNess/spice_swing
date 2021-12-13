@@ -24,7 +24,7 @@ public class days : MonoBehaviour
     void Start()
     {
         sceneNumber = SceneManager.GetActiveScene().buildIndex;
-        dayNum = sceneNumber + 1;
+        dayNum = sceneNumber;
         StartCoroutine(FadeInFromBlack());
         scriptHolder = GameObject.Find("UI Holder"); //TimeHolder is an empty game object. It should be replaced by UI component in the future.
         timeAccessor = scriptHolder.GetComponent<timer>();
@@ -115,20 +115,18 @@ public class days : MonoBehaviour
             blackScreen = new Color(blackScreen.r, blackScreen.g, blackScreen.b, fadeAmount);
             this.GetComponent<Renderer>().material.color = blackScreen;
             yield return null;
-            /*Color blackScreen = this.GetComponent<Renderer>().material.color;
-            float fadeAmount = blackScreen.a + (fadeSpeed * Time.deltaTime);
-            blackScreen = new Color(blackScreen.r, blackScreen.g, blackScreen.b, fadeAmount);
-            Debug.Log(blackScreen.a);
-            this.GetComponent<Renderer>().material.color = blackScreen;*/
 
         }
-        if (_anim.GetBool("levelWin"))
+        if (sceneNumber > 0)
         {
-            LoadNextDay();
-        }
-        else
-        {
-            LoadSameDay();
+            if (_anim.GetBool("levelWin"))
+            {
+                LoadNextDay();
+            }
+            else
+            {
+                LoadSameDay();
+            }
         }
             yield return null;
     }
