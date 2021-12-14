@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class minigame : MonoBehaviour
 {
+    public AudioSource player;
     public GameObject MiniGameBG;
     public GameObject Out_Of_Bounds;
     public GameObject QualityMeter;
@@ -149,6 +150,7 @@ public class minigame : MonoBehaviour
         for (int i = 0; i < arrowsArray.Length; i++)
         {
             Destroy(arrowsArray[i]);
+            
         }
     }
 
@@ -166,7 +168,7 @@ public class minigame : MonoBehaviour
     public void UpdateQuality(int performance)
     {
         quality += performance;
-
+        player.Play();
         if (quality > qualityMax)
         {
             quality = qualityMax;

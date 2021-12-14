@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ArrowControls : MonoBehaviour
 {
     public bool canBeHit;
-
+    
     public GameObject scriptHolder;
     public GameObject uiScript;
     public minigame callMinigame;
@@ -33,32 +33,40 @@ public class ArrowControls : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) && this.gameObject.tag == "LeftArrow")
             {
+                //.Play();
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
-
+                ////.Play();
                 scoreChanger.setScore(100);
                 //scoreChanger.setMultiplier(true);
+                Debug.Log("asdfjiodsjifkdsaik");
             }
             else if (Input.GetKeyDown(KeyCode.UpArrow) && this.gameObject.tag == "UpArrow")
             {
+                //.Play();
                 Destroy(this.gameObject);
-                callMinigame.UpdateQuality(1);
-
+                callMinigame.UpdateQuality(1);            
                 scoreChanger.setScore(100);
                 //scoreChanger.setMultiplier(true);
             }
             else if (Input.GetKeyDown(KeyCode.DownArrow) && this.gameObject.tag == "DownArrow")
             {
+                //.Play();
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
+                ////.Play();
+                Debug.Log("asdfjiodsjifkdsaik");
 
                 scoreChanger.setScore(100);
                 //scoreChanger.setMultiplier(true);
             }
             else if (Input.GetKeyDown(KeyCode.RightArrow) && this.gameObject.tag == "RightArrow")
             {
+                //.Play();
                 Destroy(this.gameObject);
                 callMinigame.UpdateQuality(1);
+                Debug.Log("asdfjiodsjifkdsaik");
+
 
                 scoreChanger.setScore(100);
                 //scoreChanger.setMultiplier(true);

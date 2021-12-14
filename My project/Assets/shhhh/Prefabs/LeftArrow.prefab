@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canBeHit: 0
+  player: {fileID: 7206473120529846628, guid: 28d4f450ff4e51449a6645c6053317c5, type: 3}
   scriptHolder: {fileID: 0}
   uiScript: {fileID: 0}
   callMinigame: {fileID: 0}
