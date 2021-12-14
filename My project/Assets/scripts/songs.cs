@@ -15,15 +15,15 @@ public class songs : MonoBehaviour
 
         IEnumerator Example()
         {
-//            Debug.Log("working");
+            Debug.Log("working");
             yield return new WaitForSeconds(120);//120
-            player.clip = song2;
-            player.Play(0);
-    //        Debug.Log("new song");
-            yield return new WaitForSeconds(180);//240
             player.clip = song1;
             player.Play(0);
-  //          Debug.Log("old song");
+            Debug.Log("new song");
+            yield return new WaitForSeconds(240);//240
+            player.clip = song2;
+            player.Play(0);
+            Debug.Log("old song");
         }
         // Update is called once per frame
         void Update()
