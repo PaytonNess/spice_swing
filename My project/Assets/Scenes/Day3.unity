@@ -2814,7 +2814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012143380}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6228639, y: -0.6920989, z: 0.014164101}
+  m_LocalPosition: {x: -1.629, y: -0.732, z: 0.014164101}
   m_LocalScale: {x: 0.6264, y: 0.32, z: 1}
   m_Children: []
   m_Father: {fileID: 1517851209}
@@ -4387,7 +4387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328944637}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6654, y: -0.6470989, z: 0.014164101}
+  m_LocalPosition: {x: -0.6719999, y: -0.721, z: 0.014164101}
   m_LocalScale: {x: 1.2740331, y: 0.32, z: 1}
   m_Children: []
   m_Father: {fileID: 1517851209}
@@ -5239,7 +5239,6 @@ MonoBehaviour:
   object3: {fileID: 484522157}
   tut: 0
   custServe: 0
-  song2: {fileID: 8300000, guid: e7dc12d024e13524a894cf129315464d, type: 3}
   player: {fileID: 1729662668}
   maxCustomers: 15
   pos: 00000000000000000000000000000000
@@ -5393,7 +5392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb752fa937765643abc284511eb6ad4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 256
+  speed: 50
 --- !u!212 &1558016525
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6141,7 +6140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894759863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.30933613, y: -0.6240989, z: 0.014164101}
+  m_LocalPosition: {x: 0.29633623, y: -0.731, z: 0.014164101}
   m_LocalScale: {x: 0.67872, y: 0.32, z: 1}
   m_Children: []
   m_Father: {fileID: 1517851209}
