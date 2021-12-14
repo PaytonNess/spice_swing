@@ -476,12 +476,12 @@ public class interaction : MonoBehaviour
                         //check minigame results
                         if (halfCooked)
                         {
-                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button3, fisganimate2));
+                            StartCoroutine(CheckMini(/*l*/ hasCookFood, button5, fisganimate2));
                             //hasCookFood = true;
                             halfCooked = false;
                         }
                         else
-                            StartCoroutine(Checkcook(/*l*/ halfCooked, button3, fisganimate2));
+                            StartCoroutine(Checkcook(/*l*/ halfCooked, button5, fisganimate2));
 
                         hasVeggie = false;
                         ischopped = false;
