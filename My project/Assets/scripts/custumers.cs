@@ -18,8 +18,10 @@ public class custumers : MonoBehaviour
     public Rigidbody2D object3;
     public bool tut = false;
     public int custServe = 0;
+    public AudioClip song2;
+    public AudioSource player;
 
-  
+
     public class custmor
     {
 
@@ -180,23 +182,35 @@ public class custumers : MonoBehaviour
             {
                 object0.velocity = new Vector2(0f, 0f);
                 anime0.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
             if (object1.position.x <= -.7)
             {
                 object1.velocity = new Vector2(0f, 0f);
                 anime1.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
 
             if (object2.position.x <= -.5)
             {
                 object2.velocity = new Vector2(0f, 0f);
                 anime2.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
 
             if (object3.position.x <= -.3)
             {
                 object3.velocity = new Vector2(0f, 0f);
                 anime3.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
         }
         else if (tut)
@@ -230,24 +244,36 @@ public class custumers : MonoBehaviour
             {
                 object0.velocity = new Vector2(0f, 0f);
                 anime0.SetBool("walking", false);
-               
+                player.clip = song2;
+                player.Play(0);
+
+
             }
             if (object1.position.x <= -.7)
             {
                 object1.velocity = new Vector2(0f, 0f);
                 anime1.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
 
             if (object2.position.x <= -.5)
             {
                 object2.velocity = new Vector2(0f, 0f);
                 anime2.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
 
             if (object3.position.x <= -.3)
             {
                 object3.velocity = new Vector2(0f, 0f);
                 anime3.SetBool("walking", false);
+                player.clip = song2;
+                player.Play(0);
+
             }
             if (!once)
             {

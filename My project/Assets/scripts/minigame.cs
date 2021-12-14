@@ -33,7 +33,7 @@ public class minigame : MonoBehaviour
     public int mgWaitTime = 20;
 
     public Vector3 temp;
-
+    private interaction inter;
     private bool failedMG = false; //Has the player failed the minigame?
     private bool destroyedArrows = false;
 
@@ -53,7 +53,7 @@ public class minigame : MonoBehaviour
 
         quality = 3;
         //Set number of notes in mini game.
-
+        inter = GetComponent<interaction>();
         scriptHolder = GameObject.Find("character");
         modifyQuality = scriptHolder.GetComponent<minigame>();
         uiScript = GameObject.Find("UI Holder");
@@ -191,6 +191,7 @@ public class minigame : MonoBehaviour
 
     public void DeactivateMiniGame()
     {
+        inter.failedanime();
         MiniGameBG.SetActive(false);
         Out_Of_Bounds.SetActive(false);
         QualityMeter.SetActive(false);

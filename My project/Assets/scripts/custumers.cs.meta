@@ -3,7 +3,21 @@ guid: 534d3d1d789c6a44982ae8fc072d6106
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spriteRenderer0: {instanceID: 0}
+  - spriteRenderer1: {instanceID: 0}
+  - spriteRenderer2: {instanceID: 0}
+  - spriteRenderer3: {instanceID: 0}
+  - anime0: {instanceID: 0}
+  - anime1: {instanceID: 0}
+  - anime2: {instanceID: 0}
+  - anime3: {instanceID: 0}
+  - object0: {instanceID: 0}
+  - object1: {instanceID: 0}
+  - object2: {instanceID: 0}
+  - object3: {instanceID: 0}
+  - song2: {fileID: 8300000, guid: e7dc12d024e13524a894cf129315464d, type: 3}
+  - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
