@@ -16,7 +16,7 @@ MonoImporter:
   - object1: {instanceID: 0}
   - object2: {instanceID: 0}
   - object3: {instanceID: 0}
-  - song2: {fileID: 8300000, guid: e7dc12d024e13524a894cf129315464d, type: 3}
+  - song2: {instanceID: 0}
   - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}

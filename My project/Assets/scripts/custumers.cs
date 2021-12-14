@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class custumers : MonoBehaviour
 {
+    bool bell1 = true;
+    bool bell2 = true;
+    bool bell3 = true;
+    bool bell4 = true;
     public SpriteRenderer spriteRenderer0;
     public SpriteRenderer spriteRenderer1;
     public SpriteRenderer spriteRenderer2;
@@ -18,7 +22,6 @@ public class custumers : MonoBehaviour
     public Rigidbody2D object3;
     public bool tut = false;
     public int custServe = 0;
-    public AudioClip song2;
     public AudioSource player;
 
 
@@ -174,7 +177,6 @@ public class custumers : MonoBehaviour
             Debug.Log(pos[0]);
             if (loop)
             {
-                //Debug.Log("start");
                 StartCoroutine(Example());
                 loop = false;
             }
@@ -182,16 +184,18 @@ public class custumers : MonoBehaviour
             {
                 object0.velocity = new Vector2(0f, 0f);
                 anime0.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
+                if (bell1)
+                    player.Play();
+                bell1 = false;
 
             }
             if (object1.position.x <= -.7)
             {
                 object1.velocity = new Vector2(0f, 0f);
                 anime1.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
+                if (bell2)
+                    player.Play();
+                bell2 = false;
 
             }
 
@@ -199,8 +203,9 @@ public class custumers : MonoBehaviour
             {
                 object2.velocity = new Vector2(0f, 0f);
                 anime2.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
+                if (bell3)
+                    player.Play();
+                bell3 = false;
 
             }
 
@@ -208,8 +213,9 @@ public class custumers : MonoBehaviour
             {
                 object3.velocity = new Vector2(0f, 0f);
                 anime3.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
+                if (bell4)
+                    player.Play();
+                bell4 = false;
 
             }
         }
@@ -244,36 +250,35 @@ public class custumers : MonoBehaviour
             {
                 object0.velocity = new Vector2(0f, 0f);
                 anime0.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
-
-
+                if (bell1)
+                    player.Play();
+                bell1 = false;
             }
             if (object1.position.x <= -.7)
             {
                 object1.velocity = new Vector2(0f, 0f);
                 anime1.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
-
+                if (bell2)
+                    player.Play();
+                bell2 = false;
             }
 
             if (object2.position.x <= -.5)
             {
                 object2.velocity = new Vector2(0f, 0f);
                 anime2.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
-
+                if (bell3)
+                    player.Play();
+                bell3 = false;
             }
 
             if (object3.position.x <= -.3)
             {
                 object3.velocity = new Vector2(0f, 0f);
                 anime3.SetBool("walking", false);
-                player.clip = song2;
-                player.Play(0);
-
+                if (bell4)
+                    player.Play();
+                bell4 = false;
             }
             if (!once)
             {
@@ -336,6 +341,7 @@ public class custumers : MonoBehaviour
             custServe++;
             //os[0] = -1;
             //Debug.Log(another +"this is another");
+            bell1 = true;
         }
         else if (spriteRenderer1.enabled == true && another == 1)
         {
@@ -344,6 +350,7 @@ public class custumers : MonoBehaviour
             custServe++;
             another += 1;
             pos[1] = -1;
+            bell2 = true;
         }
         else if (spriteRenderer2.enabled == true && another == 2)
         {
@@ -352,6 +359,7 @@ public class custumers : MonoBehaviour
             custServe++;
             another += 1;
             pos[2] = -1;
+            bell3 = true;
         }
         else if (spriteRenderer3.enabled == true && another == 3)
         {
@@ -360,6 +368,7 @@ public class custumers : MonoBehaviour
             another = 0;
             custServe++;
             pos[3] = -1;
+            bell4 = true;
         }
     }
 

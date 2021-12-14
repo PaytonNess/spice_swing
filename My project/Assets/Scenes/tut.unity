@@ -303,7 +303,6 @@ MonoBehaviour:
   object3: {fileID: 2037772720}
   tut: 1
   custServe: 0
-  song2: {fileID: 8300000, guid: e7dc12d024e13524a894cf129315464d, type: 3}
   player: {fileID: 515134852}
   maxCustomers: 15
   pos: 00000000000000000000000000000000
@@ -1035,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7359857281266400624, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7898985533390344186, guid: df1c05989bb39af4d9e52ace4282be38, type: 3}
       propertyPath: m_RootOrder
@@ -1415,7 +1414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8813425802381589313, guid: bf6eeb49894d2f444b3b0242fe7c5dfe, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf6eeb49894d2f444b3b0242fe7c5dfe, type: 3}
@@ -1539,7 +1538,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e7dc12d024e13524a894cf129315464d, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2545,7 +2544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1794841292128039198, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2713062314419835340, guid: 9f614b4c512865b49bd572c15cca5317, type: 3}
       propertyPath: m_RootOrder
@@ -4398,7 +4397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2789268565984557229, guid: b3a44c72fcbbc3546a86330bdaaf8beb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2789268565984557230, guid: b3a44c72fcbbc3546a86330bdaaf8beb, type: 3}
       propertyPath: m_SortingOrder
@@ -4580,7 +4579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1341073745
 Transform:
   m_ObjectHideFlags: 0
@@ -6149,7 +6148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1706393723562973524, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ebcf53c98181f844be57cd04d0fb726, type: 3}
